@@ -32,6 +32,7 @@ public class Lobby extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setLayout(null);
 
@@ -47,7 +48,7 @@ public class Lobby extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(20, 250, 73, 23);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/loby.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Documents\\NetBeansProjects\\Conquistadores\\JUEGO\\src\\Images\\loby.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(-90, 0, 540, 300);
 
