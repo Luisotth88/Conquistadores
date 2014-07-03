@@ -21,7 +21,7 @@ public class Login extends javax.swing.JFrame {
 
  
     WindowManager wm;
-    jugador j;
+    
     public Login(WindowManager wm) {
         this.wm = wm;
         initComponents();
@@ -104,8 +104,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        j=new jugador(jTextField1.getText(),1000);
-        escribir(j);
+        wm.lobby.j=new jugador(jTextField1.getText(),1000);
+        escribir(wm.lobby.j);
         wm.mapa.setVisible(true);
         wm.mapa.setLocationRelativeTo(null);
         
