@@ -182,7 +182,7 @@ public class Mapa extends javax.swing.JFrame {
         jButton9.setEnabled(a.isC7());
         jButton10.setEnabled(a.isC8());
         jButton11.setEnabled(a.isC9());
-        jLabel4.setText(a.getNombre());
+        jLabel4.setText("Jugador: "+a.getNombre());
         jLabel1.setText("Tributos: "+a.getPuntaje());
         jLabel3.setText("Pilotos: "+a.getPilotos() );
     }
