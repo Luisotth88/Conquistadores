@@ -20,6 +20,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
      */
     public NewJFrame() {
         initComponents();
+        setSize(520, 370);
     }
 
     /**
@@ -48,7 +49,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
             }
         });
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(280, 530, 40, 40);
+        jLabel1.setBounds(220, 280, 40, 40);
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -57,7 +58,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(30, 540, 73, 23);
+        jButton1.setBounds(20, 290, 73, 23);
 
         jButton2.setText("jButton2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -66,11 +67,11 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(500, 540, 73, 23);
+        jButton2.setBounds(400, 290, 73, 23);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Sky.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.png"))); // NOI18N
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 600, 600);
+        jLabel2.setBounds(0, -20, 540, 350);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
