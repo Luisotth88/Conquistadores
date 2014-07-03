@@ -13,6 +13,7 @@ public class Mapa extends javax.swing.JFrame {
      * Creates new form Mapa
      */
     WindowManager wm;
+    Minijuego m;
     public Mapa(WindowManager wm) {
         this.wm = wm;
         jugador a=wm.lobby.j;
@@ -106,7 +107,7 @@ public class Mapa extends javax.swing.JFrame {
 
         jButton1.setText("Comprar Piloto");
         jPanel1.add(jButton1);
-        jButton1.setBounds(243, 380, 130, 23);
+        jButton1.setBounds(263, 380, 110, 23);
 
         jButton2.setText("Salir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +130,7 @@ public class Mapa extends javax.swing.JFrame {
 
         jLabel4.setText("Jugador");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(234, 10, 150, 30);
+        jLabel4.setBounds(294, 10, 90, 30);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
         jPanel1.add(jLabel2);
@@ -154,7 +155,7 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
+        m.start();
         
     }//GEN-LAST:event_jButton11ActionPerformed
 
@@ -170,7 +171,7 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton3ActionPerformed
     public void setbotones(jugador a){
         jButton3.setEnabled(a.isC1());
@@ -182,7 +183,7 @@ public class Mapa extends javax.swing.JFrame {
         jButton9.setEnabled(a.isC7());
         jButton10.setEnabled(a.isC8());
         jButton11.setEnabled(a.isC9());
-        jLabel4.setText("Jugador: "+a.getNombre());
+        jLabel4.setText(a.getNombre());
         jLabel1.setText("Tributos: "+a.getPuntaje());
         jLabel3.setText("Pilotos: "+a.getPilotos() );
     }

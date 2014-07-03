@@ -53,7 +53,7 @@ public class Lobby extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(20, 150, 80, 23);
+        jButton1.setBounds(20, 150, 70, 23);
 
         jButton2.setText("Cargar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -62,7 +62,7 @@ public class Lobby extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(20, 200, 80, 23);
+        jButton2.setBounds(20, 200, 70, 23);
 
         jButton3.setText("Salir");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +71,7 @@ public class Lobby extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(20, 250, 80, 23);
+        jButton3.setBounds(20, 250, 73, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/loby.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
