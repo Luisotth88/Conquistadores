@@ -118,37 +118,7 @@ public class Login extends javax.swing.JFrame {
     public JTextField getjTextField1() {
         return jTextField1;
     }
-  public jugador leer(){
-         
-         File file = new File("save.txt");
-         FileInputStream fis = null;
-         BufferedInputStream bis = null;
-         DataInputStream dis = null;
-         String split=";";
-         String[] linea=new String[20];
-         jugador d=null;
-         try {
-            fis = new FileInputStream(file);
-            bis = new BufferedInputStream(fis);
-            dis = new DataInputStream(bis);
-         
-                        
-                
-            while (dis.available() != 0) {
-                linea = dis.readLine().split(split);}
-                d=new jugador(linea[0],Long.parseLong(linea[1]),Boolean.parseBoolean(linea[2]),Boolean.parseBoolean(linea[3]),
-                Boolean.parseBoolean(linea[4]),Boolean.parseBoolean(linea[5]),Boolean.parseBoolean(linea[6]),Boolean.parseBoolean(linea[7]),
-                  Boolean.parseBoolean(linea[8]),Boolean.parseBoolean(linea[9]),Boolean.parseBoolean(linea[10]));
-                        
-                
-                                              
-           }catch (IOException e) {
-			e.printStackTrace();
-    
-    
-             }
-           return d;
-    }
+  
     public void escribir(jugador d){
         FileWriter fichero = null;
         PrintWriter pw = null;

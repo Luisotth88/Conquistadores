@@ -1,3 +1,10 @@
+
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -12,6 +19,7 @@ public class Lobby extends javax.swing.JFrame {
     /**
      * Creates new form Lobby
      */
+    jugador j;
     private WindowManager wm;
     public Lobby(WindowManager wm) {
         this.wm = wm;
@@ -48,6 +56,11 @@ public class Lobby extends javax.swing.JFrame {
         jButton1.setBounds(20, 150, 70, 23);
 
         jButton2.setText("Cargar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(20, 200, 70, 23);
 
@@ -89,6 +102,42 @@ public class Lobby extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        j=leer();
+        wm.mapa.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+    public jugador leer(){
+         
+         File file = new File("save.txt");
+         FileInputStream fis = null;
+         BufferedInputStream bis = null;
+         DataInputStream dis = null;
+         String split=";";
+         String[] linea=new String[20];
+         jugador d=null;
+         try {
+            fis = new FileInputStream(file);
+            bis = new BufferedInputStream(fis);
+            dis = new DataInputStream(bis);
+         
+                        
+                
+            while (dis.available() != 0) {
+                linea = dis.readLine().split(split);}
+                d=new jugador(linea[0],Long.parseLong(linea[1]),Boolean.parseBoolean(linea[2]),Boolean.parseBoolean(linea[3]),
+                Boolean.parseBoolean(linea[4]),Boolean.parseBoolean(linea[5]),Boolean.parseBoolean(linea[6]),Boolean.parseBoolean(linea[7]),
+                  Boolean.parseBoolean(linea[8]),Boolean.parseBoolean(linea[9]),Boolean.parseBoolean(linea[10]));
+                        
+                
+                                              
+           }catch (IOException e) {
+			e.printStackTrace();
+    
+    
+             }
+           return d;
+    }
     /**
      * @param args the command line arguments
      */
