@@ -15,16 +15,10 @@ public class Mapa extends javax.swing.JFrame {
     WindowManager wm;
     public Mapa(WindowManager wm) {
         this.wm = wm;
+        jugador a=wm.lobby.j;
         initComponents();
-        jButton3.setEnabled(false);
-        jButton4.setEnabled(true);
-        jButton5.setEnabled(true);
-        jButton6.setEnabled(false);
-        jButton7.setEnabled(false);
-        jButton8.setEnabled(false);
-        jButton9.setEnabled(false);
-        jButton10.setEnabled(false);
-        jButton11.setEnabled(true);
+        
+        
     }
 
 
@@ -55,6 +49,11 @@ public class Mapa extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3);
         jButton3.setBounds(200, 280, 20, 20);
 
@@ -88,6 +87,11 @@ public class Mapa extends javax.swing.JFrame {
         jButton9.setBounds(150, 40, 20, 20);
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton10);
         jButton10.setBounds(210, 360, 20, 20);
 
@@ -161,6 +165,27 @@ public class Mapa extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+    public void setbotones(jugador a){
+        jButton3.setEnabled(a.isC1());
+        jButton4.setEnabled(a.isC2());
+        jButton5.setEnabled(a.isC3());
+        jButton6.setEnabled(a.isC4());
+        jButton7.setEnabled(a.isC5());
+        jButton8.setEnabled(a.isC6());
+        jButton9.setEnabled(a.isC7());
+        jButton10.setEnabled(a.isC8());
+        jButton11.setEnabled(a.isC9());
+        jLabel4.setText(a.getNombre());
+        jLabel1.setText("Tributos: "+a.getPuntaje());
+        jLabel3.setText("Pilotos: "+a.getPilotos() );
+    }
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

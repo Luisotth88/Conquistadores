@@ -105,6 +105,7 @@ public class Lobby extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         j=leer();
+        wm.mapa.setbotones(j);
         wm.mapa.setVisible(true);
         wm.mapa.setLocationRelativeTo(null);
         this.setVisible(false);

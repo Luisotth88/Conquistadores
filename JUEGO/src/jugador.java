@@ -42,14 +42,14 @@ public class jugador {
         this.puntaje = puntaje;
         this.pilotos= 5;
         this.c1 = false;
-        this.c2 = false;
-        this.c3 = false;
+        this.c2 = true;
+        this.c3 = true;
         this.c4 = false;
         this.c5 = false;
         this.c6 = false;
         this.c7 = false;
         this.c8 = false;
-        this.c9 = false;
+        this.c9 = true;
     }
 
     public int getPilotos() {
