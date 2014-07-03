@@ -28,7 +28,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 
                 
             }
-        }
+        });
     }
 
     /**
