@@ -59,14 +59,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jPanel1.setLayout(null);
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
         jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jLabel1KeyPressed(evt);
             }
         });
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(220, 280, 40, 40);
+        jLabel1.setBounds(220, 270, 40, 40);
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +88,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jLabel6.setText("jLabel6");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(130, 30, 34, 14);
+        jLabel6.setBounds(210, 30, 34, 14);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.png"))); // NOI18N
         jPanel1.add(jLabel2);
