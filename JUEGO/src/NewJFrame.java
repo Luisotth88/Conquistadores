@@ -24,11 +24,12 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jLabel3.setLocation(260,0);
         t= new Timer(1000, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
-                jLabel3.setLocation(260,y+1);
+                jLabel3.setLocation(260,y+10);
                 
                 
             }
         });
+        t.start();
     }
 
     /**
