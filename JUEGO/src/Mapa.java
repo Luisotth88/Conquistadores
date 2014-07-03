@@ -106,7 +106,7 @@ public class Mapa extends javax.swing.JFrame {
 
         jButton1.setText("Comprar Piloto");
         jPanel1.add(jButton1);
-        jButton1.setBounds(263, 380, 110, 23);
+        jButton1.setBounds(243, 380, 130, 23);
 
         jButton2.setText("Salir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +129,7 @@ public class Mapa extends javax.swing.JFrame {
 
         jLabel4.setText("Jugador");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(294, 10, 90, 30);
+        jLabel4.setBounds(234, 10, 150, 30);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
         jPanel1.add(jLabel2);
