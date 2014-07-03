@@ -10,16 +10,17 @@
  */
 public class WindowManager {
     
-    private Login login;
-    private Lobby lobby;
-    private Mapa mapa;
+     Login login;
+     Lobby lobby;
+     Mapa mapa;
     
     public WindowManager(){
         login = new Login(this);
         lobby = new Lobby(this);
-        mapa = new Mapa();
+        mapa = new Mapa(this);
         lobby.setVisible(true);
         login.setVisible(false);
+        mapa.setVisible(false);
         
     }
     

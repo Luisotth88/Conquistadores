@@ -1,3 +1,6 @@
+
+import javax.swing.JTextField;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -62,6 +65,11 @@ public class Login extends javax.swing.JFrame {
         jButton1.setBounds(50, 60, 73, 23);
 
         jButton2.setText("Salir");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(140, 60, 80, 23);
 
@@ -90,8 +98,20 @@ public class Login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jugador j=new jugador(jTextField1.getText(),1000);
         g.escribir(j);
+        wm.mapa.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        wm.lobby.setVisible(true);
+        this.setVisible(false);
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    public JTextField getjTextField1() {
+        return jTextField1;
+    }
+  
     
     
     
