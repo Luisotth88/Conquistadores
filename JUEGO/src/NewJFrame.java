@@ -2,7 +2,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import javax.swing.*;
+import javax.swing.JOptionPane;
+import javax.swing.Timer;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -18,21 +20,22 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
     Timer t;
     int y=0;
+    boolean win=false;
     public NewJFrame() {
         initComponents();
         setSize(520, 370);
         jLabel6.setLocation(260,0);
-        t= new Timer(1000, new ActionListener(){
+        t= new Timer(200, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 jLabel6.setLocation(260,y);
-                y+=10;
-                
-                
-                
-                
+                y+=5;
+                if(jLabel6.getLocation()==jLabel1.getLocation()){
+                    JOptionPane.showMessageDialog(null,"Perdiste aweonao");
+                }
             }
         });
         t.start();
+        
     }
 
     /**
@@ -78,7 +81,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jPanel1.add(jLabel6);
         jLabel6.setBounds(210, 30, 34, 14);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Documents\\NetBeansProjects\\Conquistadores\\JUEGO\\src\\Images\\plane.gif")); // NOI18N
+        jLabel1.setText("caca");
         jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jLabel1KeyPressed(evt);
@@ -86,8 +89,6 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         });
         jPanel1.add(jLabel1);
         jLabel1.setBounds(230, 270, 30, 40);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Documents\\NetBeansProjects\\Conquistadores\\JUEGO\\src\\Images\\sky.png")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 550, 380);
 

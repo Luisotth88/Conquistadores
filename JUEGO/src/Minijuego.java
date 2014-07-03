@@ -13,6 +13,7 @@ import javax.swing.JFrame;
  */
 public class Minijuego {
     private boolean iniciado;
+    boolean win;       
     panel p;
     WindowManager wm;
     JFrame v = new JFrame("Ventana");
@@ -23,6 +24,7 @@ public class Minijuego {
         v.add(p);
         v.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         v.setLocationRelativeTo(null);
+        win=false;
         
     }
     
