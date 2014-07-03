@@ -27,7 +27,7 @@ public class guardar {
          BufferedInputStream bis = null;
          DataInputStream dis = null;
          String split=";";
-         String[] linea=new String[10];
+         String[] linea=new String[20];
          jugador d=null;
          try {
             fis = new FileInputStream(file);
@@ -56,7 +56,7 @@ public class guardar {
         PrintWriter pw = null;
         try
         {
-            fichero = new FileWriter("dato.txt");
+            fichero = new FileWriter("save.txt");
             pw = new PrintWriter(fichero);
  
             
