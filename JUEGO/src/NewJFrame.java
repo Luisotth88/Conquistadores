@@ -39,6 +39,8 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(400, 280));
+        setResizable(false);
 
         jPanel1.setLayout(null);
 
@@ -71,7 +73,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.png"))); // NOI18N
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, -20, 540, 350);
+        jLabel2.setBounds(0, -20, 610, 430);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,12 +102,17 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jLabel1.setLocation((int)jLabel1.getLocation().getX()-10,(int)jLabel1.getLocation().getY());
+        if((int)jLabel1.getLocation().getX()>= 120){
+            jLabel1.setLocation((int)jLabel1.getLocation().getX()-10,(int)jLabel1.getLocation().getY());
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        jLabel1.setLocation((int)jLabel1.getLocation().getX()+10,(int)jLabel1.getLocation().getY());
+        if((int)jLabel1.getLocation().getX()<=350){
+            jLabel1.setLocation((int)jLabel1.getLocation().getX()+10,(int)jLabel1.getLocation().getY());
+        }
+        
     }//GEN-LAST:event_jButton2ActionPerformed
     
     
