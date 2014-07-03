@@ -21,6 +21,7 @@ public class Login extends javax.swing.JFrame {
 
  
     WindowManager wm;
+    jugador j;
     public Login(WindowManager wm) {
         this.wm = wm;
         initComponents();
@@ -103,7 +104,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jugador j=new jugador(jTextField1.getText(),1000);
+        j=new jugador(jTextField1.getText(),1000);
         escribir(j);
         wm.mapa.setVisible(true);
         wm.mapa.setLocationRelativeTo(null);
@@ -132,7 +133,7 @@ public class Login extends javax.swing.JFrame {
             pw = new PrintWriter(fichero);
  
             
-                pw.println(""+d.getNombre()+";"+""+d.getPuntaje()+";"+""+d.isC1()+";"+""+d.isC2()+";"+""+d.isC3()+";"+""+d.isC4()+";"+""+d.isC5()
+                pw.println(""+d.getNombre()+";"+""+d.getPilotos()+";"+""+d.getPuntaje()+";"+""+d.isC1()+";"+""+d.isC2()+";"+""+d.isC3()+";"+""+d.isC4()+";"+""+d.isC5()
                 +";"+""+d.isC6()+";"+""+d.isC7()+";"+""+d.isC8()+";"+""+d.isC9());
  
         } catch (Exception e) {

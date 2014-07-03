@@ -11,6 +11,7 @@
 public class jugador {
     String nombre;
     long puntaje;
+    int pilotos;
     boolean c1;
     boolean c2;
     boolean c3;
@@ -21,7 +22,7 @@ public class jugador {
     boolean c8;
     boolean c9;
 
-    public jugador(String nombre, long puntaje, boolean c1, boolean c2, boolean c3, boolean c4, boolean c5, boolean c6, boolean c7, boolean c8, boolean c9) {
+    public jugador(String nombre,int pilotos, long puntaje, boolean c1, boolean c2, boolean c3, boolean c4, boolean c5, boolean c6, boolean c7, boolean c8, boolean c9) {
         this.nombre = nombre;
         this.puntaje = puntaje;
         this.c1 = c1;
@@ -33,11 +34,13 @@ public class jugador {
         this.c7 = c7;
         this.c8 = c8;
         this.c9 = c9;
+        this.pilotos=pilotos;
     }
 
     public jugador(String nombre, long puntaje) {
         this.nombre = nombre;
         this.puntaje = puntaje;
+        this.pilotos= 5;
         this.c1 = false;
         this.c2 = false;
         this.c3 = false;
@@ -47,6 +50,14 @@ public class jugador {
         this.c7 = false;
         this.c8 = false;
         this.c9 = false;
+    }
+
+    public int getPilotos() {
+        return pilotos;
+    }
+
+    public void setPilotos(int pilotos) {
+        this.pilotos = pilotos;
     }
 
     

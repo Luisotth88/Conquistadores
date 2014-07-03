@@ -127,9 +127,9 @@ public class Lobby extends javax.swing.JFrame {
                 
             while (dis.available() != 0) {
                 linea = dis.readLine().split(split);}
-                d=new jugador(linea[0],Long.parseLong(linea[1]),Boolean.parseBoolean(linea[2]),Boolean.parseBoolean(linea[3]),
-                Boolean.parseBoolean(linea[4]),Boolean.parseBoolean(linea[5]),Boolean.parseBoolean(linea[6]),Boolean.parseBoolean(linea[7]),
-                  Boolean.parseBoolean(linea[8]),Boolean.parseBoolean(linea[9]),Boolean.parseBoolean(linea[10]));
+                d=new jugador(linea[0],Integer.parseInt(linea[1]),Long.parseLong(linea[2]),Boolean.parseBoolean(linea[3]),Boolean.parseBoolean(linea[4]),
+                Boolean.parseBoolean(linea[5]),Boolean.parseBoolean(linea[6]),Boolean.parseBoolean(linea[7]),Boolean.parseBoolean(linea[8]),
+                  Boolean.parseBoolean(linea[9]),Boolean.parseBoolean(linea[10]),Boolean.parseBoolean(linea[11]));
                         
                 
                                               
