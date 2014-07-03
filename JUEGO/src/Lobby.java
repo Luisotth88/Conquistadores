@@ -93,6 +93,7 @@ public class Lobby extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         wm.login.setVisible(true);
+        wm.login.setLocationRelativeTo(null);
         this.setVisible(false);
         
 
@@ -105,6 +106,7 @@ public class Lobby extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         j=leer();
         wm.mapa.setVisible(true);
+        wm.mapa.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
     public jugador leer(){

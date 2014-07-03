@@ -19,6 +19,7 @@ public class WindowManager {
         lobby = new Lobby(this);
         mapa = new Mapa(this);
         lobby.setVisible(true);
+        lobby.setLocationRelativeTo(null);
         login.setVisible(false);
         mapa.setVisible(false);
         

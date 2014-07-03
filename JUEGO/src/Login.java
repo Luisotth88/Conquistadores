@@ -106,11 +106,15 @@ public class Login extends javax.swing.JFrame {
         jugador j=new jugador(jTextField1.getText(),1000);
         escribir(j);
         wm.mapa.setVisible(true);
+        wm.mapa.setLocationRelativeTo(null);
+        
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         wm.lobby.setVisible(true);
+        wm.lobby.setLocationRelativeTo(null);
+        
         this.setVisible(false);
 
     }//GEN-LAST:event_jButton2ActionPerformed
