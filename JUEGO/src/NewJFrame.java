@@ -27,6 +27,9 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 jLabel3.setLocation(260,y+10);
                 
                 
+                
+                
+                
             }
         });
         t.start();
