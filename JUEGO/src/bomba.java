@@ -32,11 +32,11 @@ public class bomba {
 
             @Override
             public void run() {
-                while (x <= 640){
+                while (y <= 480){
                     try{
                         Thread.sleep(200);
                     } catch(Exception e){}
-                    x+=10;
+                    y+=10;
                 }
             }
         });

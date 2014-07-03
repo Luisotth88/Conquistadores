@@ -72,6 +72,11 @@ public class Mapa extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
+        jButton6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton6KeyPressed(evt);
+            }
+        });
         jPanel1.add(jButton6);
         jButton6.setBounds(260, 180, 20, 20);
 
@@ -174,6 +179,11 @@ public class Mapa extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton6KeyPressed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton6KeyPressed
     public void setbotones(jugador a){
         jButton3.setEnabled(a.isC1());
         jButton4.setEnabled(a.isC2());
