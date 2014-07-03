@@ -14,15 +14,16 @@ import javax.swing.JFrame;
 public class Minijuego {
     private boolean iniciado;
     panel p;
-    public Minijuego()
+    WindowManager wm;
+    JFrame v = new JFrame("Ventana");
+    public Minijuego(WindowManager wm)
     {
         p = new panel(this);
-        JFrame v = new JFrame("Ventana");
         v.setSize(640, 480);
         v.add(p);
         v.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         v.setLocationRelativeTo(null);
-        v.setVisible(true);
+        
     }
     
     public void stop()
@@ -32,6 +33,7 @@ public class Minijuego {
     
     public void start()
     {
+        v.setVisible(true);
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {

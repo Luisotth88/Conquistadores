@@ -155,7 +155,8 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        m.start();
+        wm.m.start();
+        
         
     }//GEN-LAST:event_jButton11ActionPerformed
 
