@@ -20,7 +20,7 @@ public class Lobby extends javax.swing.JFrame {
      * Creates new form Lobby
      */
     jugador j;
-    private WindowManager wm;
+    WindowManager wm;
     public Lobby(WindowManager wm) {
         this.wm = wm;
         initComponents();
