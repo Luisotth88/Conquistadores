@@ -31,7 +31,6 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     int x5=0;
     int y5=0;
     int temp;
-    boolean win;
     String p = "perdedor";
     String g= "ganador";
     WindowManager wm;
@@ -48,7 +47,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         
         
     }
-    public void go(){
+    public void go(int c){
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
@@ -118,7 +117,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 if(temp==0){
                     JOptionPane.showMessageDialog(null,g);
                     t.stop();
-                    win=true;
+                    
                 }
             }
         });
