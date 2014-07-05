@@ -26,13 +26,13 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
-        jLabel6.setLocation(245,0);
+        
         x=posicionxaleatoria();
-        t= new Timer(50, new ActionListener(){
+        t= new Timer(25, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 jLabel6.setLocation(x,y);
                 y+=5;
-                jLabel6.getBounds().intersects(jLabel1.getBounds());
+                
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,"Perdedor ajaja");
                     t.stop();
@@ -63,6 +63,10 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -90,7 +94,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(220, 30, 30, 40);
+        jLabel6.setBounds(310, 30, 30, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/plane.gif"))); // NOI18N
         jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -104,6 +108,22 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jLabel3.setText("CRONOMETRO");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(10, 10, 80, 30);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(220, 30, 30, 40);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(170, 30, 30, 40);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(130, 30, 30, 40);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(270, 30, 30, 40);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
         jPanel1.add(ABAJO);
@@ -190,8 +210,12 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
