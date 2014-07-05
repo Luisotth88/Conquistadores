@@ -51,10 +51,16 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         if(wm.lobby.j.getPilotos()==0){
                         JOptionPane.showMessageDialog(null, "GAME OVER");
                         String a=wm.lobby.j.getNombre();
-                        wm.lobby.j=new jugador(a,5000);
+                        wm.lobby.j=new jugador(a,1000);
                         wm.login.escribir(wm.lobby.j);
                         
+                        
                     }
+        else{
+            wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
+            wm.mapa.setVisible(true);
+            wm.mapa.setbotones(wm.lobby.j);
+        }
     }
     public void go(final int c){
         x1=posicionxaleatoria();
@@ -77,8 +83,6 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
                     wm.minijuego.setVisible(false);
-                    wm.mapa.setVisible(true);
-                    wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
                     perdiste();
                     
                     
@@ -87,21 +91,25 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
                    wm.minijuego.setVisible(false);
+                   perdiste();
                 }
                 if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
                     wm.minijuego.setVisible(false);
+                    perdiste();
                 }
                 if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
                     wm.minijuego.setVisible(false);
+                    perdiste();
                 }
                 if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
                     wm.minijuego.setVisible(false);
+                    perdiste();
                 }
                 if(jLabel6.getLocation().getY()==370){
                     x1=posicionxaleatoria();
@@ -138,6 +146,8 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.mapa.b8.setEnabled(true);
                             wm.minijuego.setVisible(false);
                             wm.mapa.setVisible(true);
+                            wm.lobby.j.setC1(true);
+                            wm.lobby.j.setC8(true);
                     }
                     
                 }
