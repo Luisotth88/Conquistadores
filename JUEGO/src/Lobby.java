@@ -74,7 +74,7 @@ public class Lobby extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(20, 250, 73, 23);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/loby.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lobby.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(-90, -30, 540, 370);
 

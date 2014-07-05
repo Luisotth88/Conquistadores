@@ -47,6 +47,12 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         
         
     }
+    public void perdiste (){
+        if(wm.lobby.j.getPilotos()==0){
+                        JOptionPane.showMessageDialog(null, "GAME OVER");
+                        
+                    }
+    }
     public void go(final int c){
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
@@ -68,6 +74,10 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
                     wm.minijuego.setVisible(false);
+                    wm.mapa.setVisible(true);
+                    wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
+                    perdiste();
+                    
                     
                 }
                 if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
@@ -123,7 +133,8 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                         case 9:
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b8.setEnabled(true);
-                            
+                            wm.minijuego.setVisible(false);
+                            wm.mapa.setVisible(true);
                     }
                     
                 }
