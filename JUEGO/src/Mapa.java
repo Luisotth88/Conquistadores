@@ -28,15 +28,15 @@ public class Mapa extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        b1 = new javax.swing.JButton();
+        b2 = new javax.swing.JButton();
+        b3 = new javax.swing.JButton();
+        b4 = new javax.swing.JButton();
+        b5 = new javax.swing.JButton();
+        b6 = new javax.swing.JButton();
+        b7 = new javax.swing.JButton();
+        b8 = new javax.swing.JButton();
+        b9 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -49,66 +49,66 @@ public class Mapa extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        b1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                b1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3);
-        jButton3.setBounds(200, 280, 20, 20);
+        jPanel1.add(b1);
+        b1.setBounds(200, 280, 20, 20);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jPanel1.add(jButton4);
-        jButton4.setBounds(160, 230, 20, 20);
+        b2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        jPanel1.add(b2);
+        b2.setBounds(160, 230, 20, 20);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jPanel1.add(jButton5);
-        jButton5.setBounds(80, 180, 20, 20);
+        b3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        jPanel1.add(b3);
+        b3.setBounds(80, 180, 20, 20);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        b4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                b4ActionPerformed(evt);
             }
         });
-        jButton6.addKeyListener(new java.awt.event.KeyAdapter() {
+        b4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jButton6KeyPressed(evt);
+                b4KeyPressed(evt);
             }
         });
-        jPanel1.add(jButton6);
-        jButton6.setBounds(260, 180, 20, 20);
+        jPanel1.add(b4);
+        b4.setBounds(260, 180, 20, 20);
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jPanel1.add(jButton7);
-        jButton7.setBounds(90, 70, 20, 20);
+        b5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        jPanel1.add(b5);
+        b5.setBounds(90, 70, 20, 20);
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jPanel1.add(jButton8);
-        jButton8.setBounds(40, 110, 20, 20);
+        b6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        jPanel1.add(b6);
+        b6.setBounds(40, 110, 20, 20);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jPanel1.add(jButton9);
-        jButton9.setBounds(150, 40, 20, 20);
+        b7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        jPanel1.add(b7);
+        b7.setBounds(150, 40, 20, 20);
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        b8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                b8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton10);
-        jButton10.setBounds(210, 360, 20, 20);
+        jPanel1.add(b8);
+        b8.setBounds(210, 360, 20, 20);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        b9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                b9ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton11);
-        jButton11.setBounds(160, 360, 20, 20);
+        jPanel1.add(b9);
+        b9.setBounds(160, 360, 20, 20);
 
         jButton1.setText("Comprar Piloto");
         jPanel1.add(jButton1);
@@ -155,15 +155,15 @@ public class Mapa extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_b4ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
        
         
         
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_b9ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         wm.lobby.setVisible(true);
@@ -172,28 +172,28 @@ public class Mapa extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_b8ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_b1ActionPerformed
 
-    private void jButton6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton6KeyPressed
+    private void b4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b4KeyPressed
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_jButton6KeyPressed
+    }//GEN-LAST:event_b4KeyPressed
     public void setbotones(jugador a){
-        jButton3.setEnabled(a.isC1());
-        jButton4.setEnabled(a.isC2());
-        jButton5.setEnabled(a.isC3());
-        jButton6.setEnabled(a.isC4());
-        jButton7.setEnabled(a.isC5());
-        jButton8.setEnabled(a.isC6());
-        jButton9.setEnabled(a.isC7());
-        jButton10.setEnabled(a.isC8());
-        jButton11.setEnabled(a.isC9());
+        b1.setEnabled(a.isC1());
+        b2.setEnabled(a.isC2());
+        b3.setEnabled(a.isC3());
+        b4.setEnabled(a.isC4());
+        b5.setEnabled(a.isC5());
+        b6.setEnabled(a.isC6());
+        b7.setEnabled(a.isC7());
+        b8.setEnabled(a.isC8());
+        b9.setEnabled(a.isC9());
         jLabel4.setText(a.getNombre());
         jLabel1.setText("Tributos: "+a.getPuntaje());
         jLabel3.setText("Pilotos: "+a.getPilotos() );
@@ -201,17 +201,17 @@ public class Mapa extends javax.swing.JFrame {
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton b1;
+    private javax.swing.JButton b2;
+    private javax.swing.JButton b3;
+    private javax.swing.JButton b4;
+    private javax.swing.JButton b5;
+    private javax.swing.JButton b6;
+    private javax.swing.JButton b7;
+    private javax.swing.JButton b8;
+    private javax.swing.JButton b9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
