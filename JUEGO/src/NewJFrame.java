@@ -29,11 +29,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     int y3=0;
     int x4=0;
     int y4=0;
+    int x5=0;
+    int y5=0;
     boolean win=false;
     public NewJFrame() {
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
+        
         
         
         //hola
@@ -42,40 +45,61 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
         x4=posicionxaleatoria();
+        x5=posicionxaleatoria();
         t= new Timer(150, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
-                jLabel6.setLocation(x,y);
-                jLabel7.setLocation(x1,y1);
-                jLabel8.setLocation(x2,y2);
-                jLabel9.setLocation(x3,y3);
-                jLabel10.setLocation(x3,y3);
-                y+=5;
-                y1+=6;
-                y2+=7;
-                y3+=8;
-                y4+=4;
-                if(jLabel6.getBounds().intersects(jLabel1.getBounds())||jLabel7.getBounds().intersects(jLabel1.getBounds())
-                        ||jLabel8.getBounds().intersects(jLabel1.getBounds())||jLabel9.getBounds().intersects(jLabel1.getBounds())
-                        ||jLabel10.getBounds().intersects(jLabel1.getBounds())){
+                
+                jLabel6.setLocation(x1,y1);
+                jLabel7.setLocation(x2,y2);
+                jLabel8.setLocation(x3,y3);
+                jLabel9.setLocation(x4,y4);
+                jLabel10.setLocation(x5,y5);
+                y1+=5;y2+=10;y3+=15;y4+=5;y5+=10;
+                //aweonao
+                if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
+                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    t.stop();
+                }
+                if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
+                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    t.stop();
+                }
+                if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
+                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    t.stop();
+                }
+                if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
+                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    t.stop();
+                }
+                if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,"Perdedor ajaja");
                     t.stop();
                 }
                 if(jLabel6.getLocation().getY()==370){
-                    x=posicionxaleatoria();
                     x1=posicionxaleatoria();
-                    x2=posicionxaleatoria();
-                    x3=posicionxaleatoria();
-                    x4=posicionxaleatoria();
-                    y=0;
                     y1=0;
+                    jLabel6.setLocation(x1,y1);
+                }
+                if(jLabel7.getLocation().getY()==370){
+                    x2=posicionxaleatoria();
                     y2=0;
+                    jLabel7.setLocation(x2,y2);
+                }
+                if(jLabel8.getLocation().getY()==370){
+                    x3=posicionxaleatoria();
                     y3=0;
+                    jLabel8.setLocation(x3,y3);
+                }
+                if(jLabel9.getLocation().getY()==370){
+                    x4=posicionxaleatoria();
                     y4=0;
-                    jLabel6.setLocation(x,y);
-                    jLabel7.setLocation(x1,y1);
-                    jLabel8.setLocation(x2,y2);
-                    jLabel9.setLocation(x3,y3);
-                    jLabel10.setLocation(x3,y3);
+                    jLabel9.setLocation(x4,y4);
+                }
+                if(jLabel10.getLocation().getY()==370){
+                    x5=posicionxaleatoria();
+                    y5=0;
+                    jLabel10.setLocation(x5,y5);
                 }
             }
         });
