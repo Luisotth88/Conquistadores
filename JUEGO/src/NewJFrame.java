@@ -64,6 +64,11 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         }
     }
     public void go(final int c){
+        jLabel6.setLocation(0,0);
+        jLabel7.setLocation(0,0);
+        jLabel8.setLocation(0,0);
+        jLabel9.setLocation(0,0);
+        jLabel10.setLocation(0,0);
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
