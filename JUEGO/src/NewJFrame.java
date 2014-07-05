@@ -21,6 +21,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     Timer t;
     int y=0;
     int x=0;
+    int x1=0;
+    int y1=0;
+    int x2=0;
+    int y2=0;
+    int x3=0;
+    int y3=0;
+    int x4=0;
+    int y4=0;
     boolean win=false;
     public NewJFrame() {
         initComponents();
@@ -28,19 +36,44 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         setSize(490, 370);
         
         x=posicionxaleatoria();
+        x1=posicionxaleatoria();
+        x2=posicionxaleatoria();
+        x3=posicionxaleatoria();
+        x4=posicionxaleatoria();
         t= new Timer(25, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 jLabel6.setLocation(x,y);
+                jLabel7.setLocation(x1,y1);
+                jLabel8.setLocation(x2,y2);
+                jLabel9.setLocation(x3,y3);
+                jLabel10.setLocation(x3,y3);
                 y+=5;
-                
-                if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
+                y1+=5;
+                y2+=5;
+                y3+=5;
+                y4+=5;
+                if(jLabel6.getBounds().intersects(jLabel1.getBounds())||jLabel7.getBounds().intersects(jLabel1.getBounds())
+                        ||jLabel8.getBounds().intersects(jLabel1.getBounds())||jLabel9.getBounds().intersects(jLabel1.getBounds())
+                        ||jLabel10.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,"Perdedor ajaja");
                     t.stop();
                 }
                 if(jLabel6.getLocation().getY()==370){
                     x=posicionxaleatoria();
+                    x1=posicionxaleatoria();
+                    x2=posicionxaleatoria();
+                    x3=posicionxaleatoria();
+                    x4=posicionxaleatoria();
                     y=0;
+                    y1=0;
+                    y2=0;
+                    y3=0;
+                    y4=0;
                     jLabel6.setLocation(x,y);
+                    jLabel7.setLocation(x1,y1);
+                    jLabel8.setLocation(x2,y2);
+                    jLabel9.setLocation(x3,y3);
+                    jLabel10.setLocation(x3,y3);
                 }
             }
         });
