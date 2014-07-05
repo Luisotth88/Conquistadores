@@ -3,6 +3,7 @@ import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+
 import java.io.IOException;
 
 /*
@@ -122,22 +123,14 @@ public class Lobby extends javax.swing.JFrame {
          try {
             fis = new FileInputStream(file);
             bis = new BufferedInputStream(fis);
-            dis = new DataInputStream(bis);
-         
-                        
-                
+            dis = new DataInputStream(bis);   
             while (dis.available() != 0) {
                 linea = dis.readLine().split(split);}
                 d=new jugador(linea[0],Integer.parseInt(linea[1]),Long.parseLong(linea[2]),Boolean.parseBoolean(linea[3]),Boolean.parseBoolean(linea[4]),
                 Boolean.parseBoolean(linea[5]),Boolean.parseBoolean(linea[6]),Boolean.parseBoolean(linea[7]),Boolean.parseBoolean(linea[8]),
-                  Boolean.parseBoolean(linea[9]),Boolean.parseBoolean(linea[10]),Boolean.parseBoolean(linea[11]));
-                        
-                
-                                              
+                  Boolean.parseBoolean(linea[9]),Boolean.parseBoolean(linea[10]),Boolean.parseBoolean(linea[11]));                                  
            }catch (IOException e) {
 			e.printStackTrace();
-    
-    
              }
            return d;
     }
