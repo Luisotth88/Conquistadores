@@ -2,6 +2,7 @@
 
 
 
+import java.awt.event.KeyEvent;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import javax.swing.*;
@@ -56,6 +57,11 @@ public class Login extends javax.swing.JFrame {
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
             }
         });
         jPanel1.add(jTextField1);
@@ -118,6 +124,20 @@ public class Login extends javax.swing.JFrame {
         this.setVisible(false);
 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            wm.lobby.j=new jugador(jTextField1.getText(),1000);
+        escribir(wm.lobby.j);
+        wm.mapa.setbotones(wm.lobby.j);
+        wm.mapa.setVisible(true);
+        wm.mapa.setLocationRelativeTo(null);
+        
+        this.setVisible(false);
+            
+        }
+    }//GEN-LAST:event_jTextField1KeyPressed
 
     public JTextField getjTextField1() {
         return jTextField1;

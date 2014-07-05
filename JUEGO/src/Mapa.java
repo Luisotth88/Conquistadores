@@ -182,6 +182,11 @@ public class Mapa extends javax.swing.JFrame {
         jButton3.setBounds(230, 470, 160, 23);
 
         jLabel2.setText("Precio Piloto:");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel2);
         jLabel2.setBounds(230, 400, 160, 30);
 
@@ -288,13 +293,25 @@ public class Mapa extends javax.swing.JFrame {
         if(wm.lobby.j.getPilotos()<5){
             jLabel2.setText("Precio $"+p); 
             if(wm.lobby.j.puntaje>=p){
+                wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()-p);
                 wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()+1);
+                this.setbotones(wm.lobby.j);
             }
         }else{
             jLabel2.setText("Pilotos no disponibles"); 
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        int p = (10-wm.lobby.j.getPilotos())*100;
+        if(wm.lobby.j.getPilotos()<5){
+            jLabel2.setText("Precio $"+p);
+        }else{
+            jLabel2.setText("Pilotos no disponibles"); 
+        }
+    }//GEN-LAST:event_jLabel2MouseClicked
     public void setbotones(jugador a){
         b1.setEnabled(a.isC1());
         b2.setEnabled(a.isC2());

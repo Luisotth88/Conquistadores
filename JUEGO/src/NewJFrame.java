@@ -389,7 +389,13 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
     @Override
     public void keyPressed(KeyEvent ke) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       if (ke.getKeyCode()==KeyEvent.VK_LEFT){
+            jLabel1.setLocation((int)jLabel1.getLocation().getX()-10,(int)jLabel1.getLocation().getY());
+            
+        }
+        if (ke.getKeyCode()==KeyEvent.VK_RIGHT){
+            jLabel1.setLocation((int)jLabel1.getLocation().getX()+10,(int)jLabel1.getLocation().getY());
+        }
     }
 
     @Override
