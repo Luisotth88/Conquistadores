@@ -194,4 +194,13 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     public void keyReleased(KeyEvent ke) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    public int posicionxaleatoria(){
+        int a;
+        do{
+            a=((int)(Math.random()*1000))%370;
+        }while(a<100);
+        return a;
+    }
+            //100 370
 }
