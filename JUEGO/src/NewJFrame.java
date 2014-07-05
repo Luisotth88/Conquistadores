@@ -30,13 +30,15 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     int y4=0;
     int x5=0;
     int y5=0;
+    int temp;
     String p = "perdedor";
+    String g= "ganador";
     boolean win=false;
     public NewJFrame() {
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
-        
+        temp=100;
         
         
         //hola
@@ -55,7 +57,8 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 jLabel9.setLocation(x4,y4);
                 jLabel10.setLocation(x5,y5);
                 y1+=5;y2+=10;y3+=15;y4+=5;y5+=10;
-                //aweonao
+                temp-=1;
+                jLabel3.setText("Temp: "+temp);
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
@@ -100,6 +103,9 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     x5=posicionxaleatoria();
                     y5=0;
                     jLabel10.setLocation(x5,y5);
+                }
+                if(temp==0){
+                    JOptionPane.showConfirmDialog(null,g);
                 }
             }
         });
