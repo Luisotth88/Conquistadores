@@ -284,7 +284,7 @@ public class Mapa extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:10-p*100
-        int p = 10-wm.lobby.j.getPilotos()*100;
+        int p = (10-wm.lobby.j.getPilotos())*100;
         if(wm.lobby.j.getPilotos()<5){
             jLabel2.setText("Precio $"+p); 
             if(wm.lobby.j.puntaje>=p){
