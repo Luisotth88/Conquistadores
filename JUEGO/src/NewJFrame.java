@@ -105,7 +105,9 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     jLabel10.setLocation(x5,y5);
                 }
                 if(temp==0){
-                    JOptionPane.showConfirmDialog(null,g);
+                    JOptionPane.showMessageDialog(null,g);
+                    t.stop();
+                    win=true;
                 }
             }
         });
