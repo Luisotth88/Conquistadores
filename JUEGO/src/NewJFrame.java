@@ -1,7 +1,5 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
@@ -16,7 +14,7 @@ import javax.swing.Timer;
  *
  * @author Diego
  */
-public class NewJFrame extends javax.swing.JFrame implements KeyListener{
+public class NewJFrame extends javax.swing.JFrame {
 
     Timer t;
 
@@ -30,6 +28,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     int y4=0;
     int x5=0;
     int y5=0;
+    int x6=0;
+    int y6=0;
+    int x7=0;
+    int y7=0;
+    int x8=0;
+    int y8=0;
+    int x9=0;
+    int y9=0;
     int temp;
     String p = "perdedor";
     String g= "ganador";
@@ -59,9 +65,11 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     }
         else{
             wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
+            JOptionPane.showMessageDialog(null, "Haz perdido");
+            wm.minijuego.setVisible(false);
             wm.mapa.setVisible(true);
             wm.mapa.setbotones(wm.lobby.j);
-            JOptionPane.showMessageDialog(null, "Haz perdido");
+            
         }
     }
     public void go(final int c){
@@ -70,13 +78,24 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         y3=0;
         y4=0;
         y5=0;
+        y6=0;
+        y7=0;
+        y8=0;
+        y9=0;
+        
         
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
         x4=posicionxaleatoria();
         x5=posicionxaleatoria();
+        x6=posicionxaleatoria();
+        x7=posicionxaleatoria();
+        x8=posicionxaleatoria();
+        x9=posicionxaleatoria();
+        
         t= new Timer(150, new ActionListener(){
+            @Override
             public void actionPerformed(ActionEvent ae){
                 
                 jLabel6.setLocation(x1,y1);
@@ -84,65 +103,105 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 jLabel8.setLocation(x3,y3);
                 jLabel9.setLocation(x4,y4);
                 jLabel10.setLocation(x5,y5);
-                y1+=5;y2+=10;y3+=15;y4+=5;y5+=10;
+                jLabel11.setLocation(x6,y6);
+                jLabel12.setLocation(x7,y7);
+                jLabel13.setLocation(x8,y8);
+                jLabel14.setLocation(x9,y9);
+                
+                y1+=20;
+                y2+=10;
+                y3+=15;
+                y4+=20;
+                y5+=10;
+                y6+=15;
+                y7+=25;
+                y8+=30;
+                y9+=10;
+                
                 temp-=1;
                 jLabel3.setText("Temp: "+temp);
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
-                    
                     t.stop();
-                    wm.minijuego.setVisible(false);
                     perdiste();
-                    
                     
                 }
                 if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
-                    
                     t.stop();
-                   wm.minijuego.setVisible(false);
-                   perdiste();
+                    perdiste();
+                    
                 }
                 if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
-                    
                     t.stop();
-                    wm.minijuego.setVisible(false);
                     perdiste();
                 }
                 if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
-                    
                     t.stop();
-                    wm.minijuego.setVisible(false);
                     perdiste();
                 }
                 if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
-                    
                     t.stop();
-                    wm.minijuego.setVisible(false);
                     perdiste();
                 }
-                if(jLabel6.getLocation().getY()==370){
+                if(jLabel11.getBounds().intersects(jLabel1.getBounds())){
+                    t.stop();
+                    perdiste();
+                }
+                if(jLabel12.getBounds().intersects(jLabel1.getBounds())){
+                    t.stop();
+                    perdiste();
+                }
+                if(jLabel13.getBounds().intersects(jLabel1.getBounds())){
+                    t.stop();
+                    perdiste();
+                }
+                if(jLabel14.getBounds().intersects(jLabel1.getBounds())){
+                    t.stop();
+                    perdiste();
+                }
+                if(jLabel6.getLocation().getY()>=370){
                     x1=posicionxaleatoria();
                     y1=0;
                     jLabel6.setLocation(x1,y1);
                 }
-                if(jLabel7.getLocation().getY()==370){
+                if(jLabel7.getLocation().getY()>=370){
                     x2=posicionxaleatoria();
                     y2=0;
                     jLabel7.setLocation(x2,y2);
                 }
-                if(jLabel8.getLocation().getY()==370){
+                if(jLabel8.getLocation().getY()>=370){
                     x3=posicionxaleatoria();
                     y3=0;
                     jLabel8.setLocation(x3,y3);
                 }
-                if(jLabel9.getLocation().getY()==370){
+                if(jLabel9.getLocation().getY()>=370){
                     x4=posicionxaleatoria();
                     y4=0;
                     jLabel9.setLocation(x4,y4);
                 }
-                if(jLabel10.getLocation().getY()==370){
+                if(jLabel10.getLocation().getY()>=370){
                     x5=posicionxaleatoria();
                     y5=0;
                     jLabel10.setLocation(x5,y5);
+                }
+                if(jLabel11.getLocation().getY()>=370){
+                    x6=posicionxaleatoria();
+                    y6=0;
+                    jLabel11.setLocation(x6,y6);
+                }
+                if(jLabel12.getLocation().getY()>=370){
+                    x7=posicionxaleatoria();
+                    y7=0;
+                    jLabel12.setLocation(x7,y7);
+                }
+                if(jLabel13.getLocation().getY()>=370){
+                    x8=posicionxaleatoria();
+                    y8=0;
+                    jLabel13.setLocation(x8,y8);
+                }
+                if(jLabel14.getLocation().getY()>=370){
+                    x9=posicionxaleatoria();
+                    y9=0;
+                    jLabel14.setLocation(x9,y9);
                 }
                 if(temp==0){
                     temp=100;
@@ -260,6 +319,10 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -287,9 +350,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(330, 70, 30, 40);
+        jLabel6.setBounds(330, 70, 30, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/plane.gif"))); // NOI18N
+        jLabel1.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
+            public void mouseWheelMoved(java.awt.event.MouseWheelEvent evt) {
+                jLabel1MouseWheelMoved(evt);
+            }
+        });
         jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jLabel1KeyPressed(evt);
@@ -304,19 +372,35 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(220, 50, 30, 40);
+        jLabel7.setBounds(270, 50, 30, 30);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(160, 10, 30, 40);
+        jLabel8.setBounds(130, 10, 30, 30);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(100, 50, 30, 40);
+        jLabel9.setBounds(100, 60, 30, 30);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(270, 0, 30, 40);
+        jLabel10.setBounds(310, 10, 30, 30);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(220, 20, 30, 30);
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(160, 60, 30, 30);
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel13);
+        jLabel13.setBounds(370, 20, 30, 30);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
+        jPanel1.add(jLabel14);
+        jLabel14.setBounds(220, 60, 30, 30);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
         jPanel1.add(ABAJO);
@@ -337,16 +421,6 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     }// </editor-fold>//GEN-END:initComponents
 
     
-    private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
-        if (evt.getKeyCode()==KeyEvent.VK_LEFT){
-            jLabel1.setLocation((int)jLabel1.getLocation().getX()-10,(int)jLabel1.getLocation().getY());
-            
-        }
-        if (evt.getKeyCode()==KeyEvent.VK_RIGHT){
-            jLabel1.setLocation((int)jLabel1.getLocation().getX()+10,(int)jLabel1.getLocation().getY());
-        }
-    }//GEN-LAST:event_jLabel1KeyPressed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         if((int)jLabel1.getLocation().getX()>= 120){
@@ -361,6 +435,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         }
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
+
+    }//GEN-LAST:event_jLabel1KeyPressed
+
+    private void jLabel1MouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_jLabel1MouseWheelMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1MouseWheelMoved
     
     
     /**
@@ -374,6 +456,10 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -382,26 +468,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
-    @Override
-    public void keyTyped(KeyEvent ke) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
-    @Override
-    public void keyPressed(KeyEvent ke) {
-       if (ke.getKeyCode()==KeyEvent.VK_LEFT){
-            jLabel1.setLocation((int)jLabel1.getLocation().getX()-10,(int)jLabel1.getLocation().getY());
-            
-        }
-        if (ke.getKeyCode()==KeyEvent.VK_RIGHT){
-            jLabel1.setLocation((int)jLabel1.getLocation().getX()+10,(int)jLabel1.getLocation().getY());
-        }
-    }
-
-    @Override
-    public void keyReleased(KeyEvent ke) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     public static int posicionxaleatoria(){
         int a;
