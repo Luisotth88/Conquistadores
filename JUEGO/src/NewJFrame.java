@@ -64,11 +64,12 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         }
     }
     public void go(final int c){
-        jLabel6.setLocation(0,0);
-        jLabel7.setLocation(0,0);
-        jLabel8.setLocation(0,0);
-        jLabel9.setLocation(0,0);
-        jLabel10.setLocation(0,0);
+        y1=0;
+        y2=0;
+        y3=0;
+        y4=0;
+        y5=0;
+        
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
@@ -154,6 +155,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b8.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
+                            wm.lobby.j.setC9(false);
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setC8(true);
                             wm.lobby.j.setC4(true);
@@ -163,6 +165,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.mapa.b2.setEnabled(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.mapa.b1.setEnabled(true);
+                            wm.lobby.j.setC2(false);
                             wm.lobby.j.setC4(true);
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
@@ -171,6 +174,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.mapa.b3.setEnabled(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.mapa.b6.setEnabled(true);
+                            wm.lobby.j.setC3(false);
                             wm.lobby.j.setC4(true);
                             wm.lobby.j.setC6(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
@@ -181,6 +185,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b5.setEnabled(true);
                             wm.mapa.b7.setEnabled(true);
+                            wm.lobby.j.setC4(false);
                             wm.lobby.j.setC8(true);
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setC5(true);
@@ -193,6 +198,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.mapa.b7.setEnabled(true);
                             wm.mapa.b6.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
+                            wm.lobby.j.setC5(false);
                             wm.lobby.j.setC7(true);
                             wm.lobby.j.setC6(true);
                             wm.lobby.j.setC4(true);
@@ -201,6 +207,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                         case 6:
                             wm.mapa.b6.setEnabled(false);
                             wm.mapa.b5.setEnabled(true);
+                            wm.lobby.j.setC6(false);
                             wm.lobby.j.setC5(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+10*wm.lobby.j.getPilotos());
                             break;
@@ -209,6 +216,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.mapa.b7.setEnabled(false);
                             wm.mapa.b5.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
+                            wm.lobby.j.setC7(false);
                             wm.lobby.j.setC5(true);
                             wm.lobby.j.setC4(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
@@ -216,6 +224,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                         case 8:
                             wm.mapa.b8.setEnabled(false);
                             wm.mapa.b4.setEnabled(true);
+                            wm.lobby.j.setC8(false);
                             wm.lobby.j.setC4(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+10*wm.lobby.j.getPilotos());
                             break;
@@ -286,7 +295,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
             }
         });
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(230, 270, 30, 40);
+        jLabel1.setBounds(230, 270, 28, 40);
 
         jLabel3.setText("CRONOMETRO");
         jPanel1.add(jLabel3);

@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -42,7 +45,9 @@ public class Mapa extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -59,10 +64,20 @@ public class Mapa extends javax.swing.JFrame {
         b1.setBounds(200, 280, 20, 20);
 
         b2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(b2);
         b2.setBounds(160, 230, 20, 20);
 
         b3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(b3);
         b3.setBounds(80, 180, 20, 20);
 
@@ -81,14 +96,29 @@ public class Mapa extends javax.swing.JFrame {
         b4.setBounds(260, 180, 20, 20);
 
         b5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(b5);
         b5.setBounds(90, 70, 20, 20);
 
         b6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b6ActionPerformed(evt);
+            }
+        });
         jPanel1.add(b6);
         b6.setBounds(40, 110, 20, 20);
 
         b7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/attack.png"))); // NOI18N
+        b7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b7ActionPerformed(evt);
+            }
+        });
         jPanel1.add(b7);
         b7.setBounds(150, 40, 20, 20);
 
@@ -112,7 +142,7 @@ public class Mapa extends javax.swing.JFrame {
 
         jButton1.setText("Comprar Piloto");
         jPanel1.add(jButton1);
-        jButton1.setBounds(263, 380, 110, 23);
+        jButton1.setBounds(260, 390, 110, 23);
 
         jButton2.setText("Salir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +151,7 @@ public class Mapa extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(263, 430, 110, 23);
+        jButton2.setBounds(260, 460, 110, 23);
 
         jLabel1.setText("Tributos: ");
         jLabel1.setToolTipText("");
@@ -137,9 +167,22 @@ public class Mapa extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(294, 10, 90, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
+        jButton3.setText("GUARDAR");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+        jButton3.setBounds(260, 420, 110, 23);
+
+        jLabel2.setText("jLabel2");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 400, 540);
+        jLabel2.setBounds(290, 370, 34, 14);
+
+        ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
+        jPanel1.add(ABAJO);
+        ABAJO.setBounds(0, 0, 400, 540);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -157,6 +200,9 @@ public class Mapa extends javax.swing.JFrame {
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
         // TODO add your handling code here:
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(4);
+       wm.mapa.setVisible(false);
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
@@ -174,16 +220,62 @@ public class Mapa extends javax.swing.JFrame {
 
     private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
         // TODO add your handling code here:
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(8);
+       wm.mapa.setVisible(false);
     }//GEN-LAST:event_b8ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-        
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(1);
+       wm.mapa.setVisible(false);
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b4KeyPressed
         // TODO add your handling code here:
         
     }//GEN-LAST:event_b4KeyPressed
+
+    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
+        // TODO add your handling code here:
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(7);
+       wm.mapa.setVisible(false);
+    }//GEN-LAST:event_b7ActionPerformed
+
+    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
+        // TODO add your handling code here:
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(5);
+       wm.mapa.setVisible(false);
+    }//GEN-LAST:event_b5ActionPerformed
+
+    private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
+        // TODO add your handling code here:
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(6);
+       wm.mapa.setVisible(false);
+    }//GEN-LAST:event_b6ActionPerformed
+
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
+        // TODO add your handling code here:
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(3);
+       wm.mapa.setVisible(false);
+    }//GEN-LAST:event_b3ActionPerformed
+
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+        // TODO add your handling code here:
+        wm.minijuego.setVisible(true);
+       wm.minijuego.go(2);
+       wm.mapa.setVisible(false);
+    }//GEN-LAST:event_b2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        wm.login.escribir(wm.lobby.j);
+        JOptionPane.showMessageDialog(null, "Guardado con éxito");
+    }//GEN-LAST:event_jButton3ActionPerformed
     public void setbotones(jugador a){
         b1.setEnabled(a.isC1());
         b2.setEnabled(a.isC2());
@@ -201,6 +293,7 @@ public class Mapa extends javax.swing.JFrame {
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ABAJO;
     public javax.swing.JButton b1;
     public javax.swing.JButton b2;
     public javax.swing.JButton b3;
@@ -212,6 +305,7 @@ public class Mapa extends javax.swing.JFrame {
     public javax.swing.JButton b9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     public javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel3;
