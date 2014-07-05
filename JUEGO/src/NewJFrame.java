@@ -48,12 +48,13 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         
     }
     public void perdiste (){
+        temp=100;
         if(wm.lobby.j.getPilotos()==0){
                         JOptionPane.showMessageDialog(null, "GAME OVER");
                         String a=wm.lobby.j.getNombre();
                         wm.lobby.j=new jugador(a,1000);
                         wm.login.escribir(wm.lobby.j);
-                        
+                        wm.lobby.setVisible(true);
                         
                     }
         else{
@@ -137,6 +138,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     jLabel10.setLocation(x5,y5);
                 }
                 if(temp==0){
+                    temp=100;
                     JOptionPane.showMessageDialog(null,g);
                     t.stop();
                     
