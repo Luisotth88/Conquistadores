@@ -160,6 +160,12 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
+       wm.minijuego.setVisible(true);
+       wm.minijuego.go();
+       wm.mapa.setVisible(false);
+       if(wm.minijuego.win){
+           System.out.println("wena");
+       }
        
         
         

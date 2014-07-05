@@ -31,19 +31,24 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     int x5=0;
     int y5=0;
     int temp;
+    boolean win;
     String p = "perdedor";
     String g= "ganador";
-    boolean win=false;
     WindowManager wm;
     public NewJFrame(WindowManager wm) {
+        this.wm=wm;
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
         temp=100;
         
         
-        //hola
         
+        
+        
+        
+    }
+    public void go(){
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
@@ -63,22 +68,27 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
+                    
                 }
                 if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
+                   
                 }
                 if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
+                    
                 }
                 if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
+                    
                 }
                 if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
+                 
                 }
                 if(jLabel6.getLocation().getY()==370){
                     x1=posicionxaleatoria();
@@ -113,7 +123,6 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
             }
         });
         t.start();
-        
     }
 
     /**
