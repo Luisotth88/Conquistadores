@@ -20,14 +20,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
     Timer t;
     int y=0;
-    int x=posicionxaleatoria();
+    int x=0;
     boolean win=false;
     public NewJFrame() {
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
         jLabel6.setLocation(245,0);
-        
+        x=posicionxaleatoria();
         t= new Timer(50, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 jLabel6.setLocation(x,y);
@@ -36,6 +36,11 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,"Perdedor ajaja");
                     t.stop();
+                }
+                if(jLabel6.getLocation().getY()==370){
+                    x=posicionxaleatoria();
+                    y=0;
+                    jLabel6.setLocation(x,y);
                 }
             }
         });
