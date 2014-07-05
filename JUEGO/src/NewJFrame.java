@@ -11,7 +11,7 @@ import javax.swing.Timer;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+//230X 260Y
 /**
  *
  * @author Diego
@@ -28,12 +28,13 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         setSize(490, 370);
         jLabel6.setLocation(245,0);
         
-        t= new Timer(200, new ActionListener(){
+        t= new Timer(50, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 jLabel6.setLocation(x,y);
                 y+=5;
-                if(jLabel6.getLocation()==jLabel1.getLocation()){
-                    JOptionPane.showMessageDialog(null,"Perdiste aweonao");
+                
+                if(jLabel6.getLocation().getX()>jLabel1.getLocation().getX()&&jLabel6.getLocation().getX()+30<jLabel1.getLocation().getX()&&y==260){
+                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
                 }
             }
         });
