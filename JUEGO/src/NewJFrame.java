@@ -148,15 +148,20 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     t.stop();
                     
                     switch(c){
+                        
                         case 9:
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b8.setEnabled(true);
-                            wm.minijuego.setVisible(false);
-                            wm.mapa.setVisible(true);
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setC8(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100);
+                            break;
+                        
+                            
                     }
-                    
+                    wm.mapa.setbotones(wm.lobby.j);
+                    wm.minijuego.setVisible(false);
+                    wm.mapa.setVisible(true);
                 }
             }
         });
