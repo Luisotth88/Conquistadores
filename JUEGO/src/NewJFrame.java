@@ -35,12 +35,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         this.setLocationRelativeTo(null);
         setSize(490, 370);
         
+        
+        //hola
         x=posicionxaleatoria();
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
         x4=posicionxaleatoria();
-        t= new Timer(25, new ActionListener(){
+        t= new Timer(150, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 jLabel6.setLocation(x,y);
                 jLabel7.setLocation(x1,y1);
@@ -48,10 +50,10 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 jLabel9.setLocation(x3,y3);
                 jLabel10.setLocation(x3,y3);
                 y+=5;
-                y1+=5;
-                y2+=5;
-                y3+=5;
-                y4+=5;
+                y1+=6;
+                y2+=7;
+                y3+=8;
+                y4+=4;
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())||jLabel7.getBounds().intersects(jLabel1.getBounds())
                         ||jLabel8.getBounds().intersects(jLabel1.getBounds())||jLabel9.getBounds().intersects(jLabel1.getBounds())
                         ||jLabel10.getBounds().intersects(jLabel1.getBounds())){
