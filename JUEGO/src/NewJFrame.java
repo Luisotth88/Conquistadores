@@ -35,6 +35,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 jLabel6.getBounds().intersects(jLabel1.getBounds());
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    t.stop();
                 }
             }
         });
