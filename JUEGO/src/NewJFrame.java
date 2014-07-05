@@ -81,7 +81,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jPanel1.add(jLabel6);
         jLabel6.setBounds(210, 30, 34, 14);
 
-        jLabel1.setText("caca");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/plane.gif"))); // NOI18N
         jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jLabel1KeyPressed(evt);
@@ -89,8 +89,10 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         });
         jPanel1.add(jLabel1);
         jLabel1.setBounds(230, 270, 30, 40);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 550, 380);
+        jLabel2.setBounds(0, 0, 490, 340);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

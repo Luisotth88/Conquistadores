@@ -13,7 +13,7 @@ public class Mapa extends javax.swing.JFrame {
      * Creates new form Mapa
      */
     WindowManager wm;
-    Minijuego m;
+    
     public Mapa(WindowManager wm) {
         this.wm = wm;
         jugador a=wm.lobby.j;
@@ -160,13 +160,8 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        wm.m.start();
-        if(wm.m.win){
-            wm.lobby.j.setC1(true);
-            wm.lobby.j.setC8(true);
-            wm.mapa.setbotones(wm.lobby.j);
-        }
-        wm.m.stop();
+       
+        
         
     }//GEN-LAST:event_jButton11ActionPerformed
 

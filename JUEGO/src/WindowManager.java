@@ -13,7 +13,7 @@ public class WindowManager {
      Login login;
      Lobby lobby;
      Mapa mapa;
-     Minijuego m;
+     
     
     public WindowManager(){
         login = new Login(this);
@@ -23,7 +23,7 @@ public class WindowManager {
         lobby.setLocationRelativeTo(null);
         login.setVisible(false);
         mapa.setVisible(false);
-        m = new Minijuego(this);
+      
         
     }
     
