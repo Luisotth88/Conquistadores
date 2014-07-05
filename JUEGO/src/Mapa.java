@@ -141,8 +141,13 @@ public class Mapa extends javax.swing.JFrame {
         b9.setBounds(160, 360, 20, 20);
 
         jButton1.setText("Comprar Piloto");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
-        jButton1.setBounds(260, 390, 110, 23);
+        jButton1.setBounds(230, 440, 160, 23);
 
         jButton2.setText("Salir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -151,7 +156,7 @@ public class Mapa extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(260, 460, 110, 23);
+        jButton2.setBounds(230, 500, 160, 23);
 
         jLabel1.setText("Tributos: ");
         jLabel1.setToolTipText("");
@@ -165,20 +170,20 @@ public class Mapa extends javax.swing.JFrame {
 
         jLabel4.setText("Jugador");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(294, 10, 90, 30);
+        jLabel4.setBounds(234, 10, 150, 30);
 
-        jButton3.setText("GUARDAR");
+        jButton3.setText("Guardar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(260, 420, 110, 23);
+        jButton3.setBounds(230, 470, 160, 23);
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("Precio Piloto:");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(290, 370, 34, 14);
+        jLabel2.setBounds(230, 400, 160, 30);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
         jPanel1.add(ABAJO);
@@ -276,6 +281,20 @@ public class Mapa extends javax.swing.JFrame {
         wm.login.escribir(wm.lobby.j);
         JOptionPane.showMessageDialog(null, "Guardado con éxito");
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:10-p*100
+        int p = 10-wm.lobby.j.getPilotos()*100;
+        if(wm.lobby.j.getPilotos()<5){
+            jLabel2.setText("Precio $"+p); 
+            if(wm.lobby.j.puntaje>=p){
+                wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()+1);
+            }
+        }else{
+            jLabel2.setText("Pilotos no disponibles"); 
+        }
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
     public void setbotones(jugador a){
         b1.setEnabled(a.isC1());
         b2.setEnabled(a.isC2());
@@ -286,7 +305,7 @@ public class Mapa extends javax.swing.JFrame {
         b7.setEnabled(a.isC7());
         b8.setEnabled(a.isC8());
         b9.setEnabled(a.isC9());
-        jLabel4.setText(a.getNombre());
+        jLabel4.setText("Jugador: "+a.getNombre());
         jLabel1.setText("Tributos: "+a.getPuntaje());
         jLabel3.setText("Pilotos: "+a.getPilotos() );
     }

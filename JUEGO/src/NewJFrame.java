@@ -159,7 +159,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setC8(true);
                             wm.lobby.j.setC4(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+30*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
                             break;
                         case 2:
                             wm.mapa.b2.setEnabled(false);
@@ -168,7 +168,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setC2(false);
                             wm.lobby.j.setC4(true);
                             wm.lobby.j.setC1(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 3:
                             wm.mapa.b3.setEnabled(false);
@@ -177,7 +177,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setC3(false);
                             wm.lobby.j.setC4(true);
                             wm.lobby.j.setC6(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 4:
                             wm.mapa.b4.setEnabled(false);
@@ -190,7 +190,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setC5(true);
                             wm.lobby.j.setC7(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+40*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+400*wm.lobby.j.getPilotos());
                             break;
                         case 5:
                             //764
@@ -202,14 +202,14 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setC7(true);
                             wm.lobby.j.setC6(true);
                             wm.lobby.j.setC4(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+30*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
                             break;
                         case 6:
                             wm.mapa.b6.setEnabled(false);
                             wm.mapa.b5.setEnabled(true);
                             wm.lobby.j.setC6(false);
                             wm.lobby.j.setC5(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+10*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100*wm.lobby.j.getPilotos());
                             break;
                         case 7:
                             //5 y 4
@@ -219,18 +219,19 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setC7(false);
                             wm.lobby.j.setC5(true);
                             wm.lobby.j.setC4(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 8:
                             wm.mapa.b8.setEnabled(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC8(false);
                             wm.lobby.j.setC4(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+10*wm.lobby.j.getPilotos());
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100*wm.lobby.j.getPilotos());
                             break;
                             
                             
                     }
+                    JOptionPane.showMessageDialog(null, "Territorio Conquistado!");
                     wm.mapa.setbotones(wm.lobby.j);
                     wm.minijuego.setVisible(false);
                     wm.mapa.setVisible(true);
@@ -286,7 +287,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(310, 30, 30, 40);
+        jLabel6.setBounds(330, 70, 30, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/plane.gif"))); // NOI18N
         jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -303,19 +304,19 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(220, 30, 30, 40);
+        jLabel7.setBounds(220, 50, 30, 40);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(170, 30, 30, 40);
+        jLabel8.setBounds(160, 10, 30, 40);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(130, 30, 30, 40);
+        jLabel9.setBounds(100, 50, 30, 40);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(270, 30, 30, 40);
+        jLabel10.setBounds(270, 0, 30, 40);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
         jPanel1.add(ABAJO);
