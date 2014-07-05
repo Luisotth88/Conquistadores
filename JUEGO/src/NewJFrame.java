@@ -47,7 +47,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         
         
     }
-    public void go(int c){
+    public void go(final int c){
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
@@ -67,27 +67,28 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
+                    wm.minijuego.setVisible(false);
                     
                 }
                 if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
-                   
+                   wm.minijuego.setVisible(false);
                 }
                 if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
-                    
+                    wm.minijuego.setVisible(false);
                 }
                 if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
-                    
+                    wm.minijuego.setVisible(false);
                 }
                 if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,p);
                     t.stop();
-                 
+                    wm.minijuego.setVisible(false);
                 }
                 if(jLabel6.getLocation().getY()==370){
                     x1=posicionxaleatoria();
@@ -117,6 +118,13 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 if(temp==0){
                     JOptionPane.showMessageDialog(null,g);
                     t.stop();
+                    
+                    switch(c){
+                        case 9:
+                            wm.mapa.b1.setEnabled(true);
+                            wm.mapa.b8.setEnabled(true);
+                            
+                    }
                     
                 }
             }
