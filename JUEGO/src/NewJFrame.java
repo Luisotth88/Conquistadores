@@ -32,8 +32,8 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
             public void actionPerformed(ActionEvent ae){
                 jLabel6.setLocation(x,y);
                 y+=5;
-                
-                if(jLabel6.getLocation().getX()>jLabel1.getLocation().getX()&&jLabel6.getLocation().getX()+30<jLabel1.getLocation().getX()&&y==260){
+                jLabel6.getBounds().intersects(jLabel1.getBounds());
+                if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
                     JOptionPane.showMessageDialog(null,"Perdedor ajaja");
                 }
             }
