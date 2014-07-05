@@ -23,7 +23,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     boolean win=false;
     public NewJFrame() {
         initComponents();
-        setSize(520, 370);
+        setSize(490, 370);
         jLabel6.setLocation(260,0);
         t= new Timer(200, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
