@@ -23,6 +23,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     boolean win=false;
     public NewJFrame() {
         initComponents();
+        this.setLocationRelativeTo(null);
         setSize(490, 370);
         jLabel6.setLocation(260,0);
         t= new Timer(200, new ActionListener(){
@@ -77,9 +78,9 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jPanel1.add(jButton2);
         jButton2.setBounds(400, 290, 73, 23);
 
-        jLabel6.setText("jLabel6");
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(210, 30, 34, 14);
+        jLabel6.setBounds(220, 30, 30, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/plane.gif"))); // NOI18N
         jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
