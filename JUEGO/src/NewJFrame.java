@@ -150,13 +150,76 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     switch(c){
                         
                         case 9:
+                            wm.mapa.b9.setEnabled(false);
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b8.setEnabled(true);
+                            wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setC8(true);
-                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100);
+                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+30*wm.lobby.j.getPilotos());
                             break;
-                        
+                        case 2:
+                            wm.mapa.b2.setEnabled(false);
+                            wm.mapa.b4.setEnabled(true);
+                            wm.mapa.b1.setEnabled(true);
+                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setC1(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
+                            break;
+                        case 3:
+                            wm.mapa.b3.setEnabled(false);
+                            wm.mapa.b4.setEnabled(true);
+                            wm.mapa.b6.setEnabled(true);
+                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setC6(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
+                            break;
+                        case 4:
+                            wm.mapa.b4.setEnabled(false);
+                            wm.mapa.b8.setEnabled(true);
+                            wm.mapa.b1.setEnabled(true);
+                            wm.mapa.b5.setEnabled(true);
+                            wm.mapa.b7.setEnabled(true);
+                            wm.lobby.j.setC8(true);
+                            wm.lobby.j.setC1(true);
+                            wm.lobby.j.setC5(true);
+                            wm.lobby.j.setC7(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+40*wm.lobby.j.getPilotos());
+                            break;
+                        case 5:
+                            //764
+                            wm.mapa.b5.setEnabled(false);
+                            wm.mapa.b7.setEnabled(true);
+                            wm.mapa.b6.setEnabled(true);
+                            wm.mapa.b4.setEnabled(true);
+                            wm.lobby.j.setC7(true);
+                            wm.lobby.j.setC6(true);
+                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+30*wm.lobby.j.getPilotos());
+                            break;
+                        case 6:
+                            wm.mapa.b6.setEnabled(false);
+                            wm.mapa.b5.setEnabled(true);
+                            wm.lobby.j.setC5(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+10*wm.lobby.j.getPilotos());
+                            break;
+                        case 7:
+                            //5 y 4
+                            wm.mapa.b7.setEnabled(false);
+                            wm.mapa.b5.setEnabled(true);
+                            wm.mapa.b4.setEnabled(true);
+                            wm.lobby.j.setC5(true);
+                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+20*wm.lobby.j.getPilotos());
+                            break;
+                        case 8:
+                            wm.mapa.b8.setEnabled(false);
+                            wm.mapa.b4.setEnabled(true);
+                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+10*wm.lobby.j.getPilotos());
+                            break;
+                            
                             
                     }
                     wm.mapa.setbotones(wm.lobby.j);

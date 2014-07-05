@@ -203,7 +203,7 @@ public class Mapa extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton b1;
     public javax.swing.JButton b2;
-    private javax.swing.JButton b3;
+    public javax.swing.JButton b3;
     public javax.swing.JButton b4;
     public javax.swing.JButton b5;
     public javax.swing.JButton b6;
