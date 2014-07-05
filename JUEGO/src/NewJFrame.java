@@ -20,15 +20,17 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
     Timer t;
     int y=0;
+    int x=posicionxaleatoria();
     boolean win=false;
     public NewJFrame() {
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
-        jLabel6.setLocation(260,0);
+        jLabel6.setLocation(245,0);
+        
         t= new Timer(200, new ActionListener(){
             public void actionPerformed(ActionEvent ae){
-                jLabel6.setLocation(260,y);
+                jLabel6.setLocation(x,y);
                 y+=5;
                 if(jLabel6.getLocation()==jLabel1.getLocation()){
                     JOptionPane.showMessageDialog(null,"Perdiste aweonao");
@@ -195,7 +197,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    public int posicionxaleatoria(){
+    public static int posicionxaleatoria(){
         int a;
         do{
             a=((int)(Math.random()*1000))%370;
