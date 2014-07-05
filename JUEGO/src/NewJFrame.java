@@ -50,6 +50,9 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     public void perdiste (){
         if(wm.lobby.j.getPilotos()==0){
                         JOptionPane.showMessageDialog(null, "GAME OVER");
+                        String a=wm.lobby.j.getNombre();
+                        wm.lobby.j=new jugador(a,5000);
+                        wm.login.escribir(wm.lobby.j);
                         
                     }
     }
