@@ -19,8 +19,7 @@ import javax.swing.Timer;
 public class NewJFrame extends javax.swing.JFrame implements KeyListener{
 
     Timer t;
-    int y=0;
-    int x=0;
+
     int x1=0;
     int y1=0;
     int x2=0;
@@ -31,6 +30,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     int y4=0;
     int x5=0;
     int y5=0;
+    String p = "perdedor";
     boolean win=false;
     public NewJFrame() {
         initComponents();
@@ -40,7 +40,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         
         
         //hola
-        x=posicionxaleatoria();
+        
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
@@ -57,23 +57,23 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 y1+=5;y2+=10;y3+=15;y4+=5;y5+=10;
                 //aweonao
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    JOptionPane.showMessageDialog(null,p);
                     t.stop();
                 }
                 if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    JOptionPane.showMessageDialog(null,p);
                     t.stop();
                 }
                 if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    JOptionPane.showMessageDialog(null,p);
                     t.stop();
                 }
                 if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    JOptionPane.showMessageDialog(null,p);
                     t.stop();
                 }
                 if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,"Perdedor ajaja");
+                    JOptionPane.showMessageDialog(null,p);
                     t.stop();
                 }
                 if(jLabel6.getLocation().getY()==370){
