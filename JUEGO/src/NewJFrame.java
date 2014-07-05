@@ -61,6 +61,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
             wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
             wm.mapa.setVisible(true);
             wm.mapa.setbotones(wm.lobby.j);
+            JOptionPane.showMessageDialog(null, "Haz perdido");
         }
     }
     public void go(final int c){
@@ -87,7 +88,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 temp-=1;
                 jLabel3.setText("Temp: "+temp);
                 if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,p);
+                    
                     t.stop();
                     wm.minijuego.setVisible(false);
                     perdiste();
@@ -95,25 +96,25 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                     
                 }
                 if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,p);
+                    
                     t.stop();
                    wm.minijuego.setVisible(false);
                    perdiste();
                 }
                 if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,p);
+                    
                     t.stop();
                     wm.minijuego.setVisible(false);
                     perdiste();
                 }
                 if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,p);
+                    
                     t.stop();
                     wm.minijuego.setVisible(false);
                     perdiste();
                 }
                 if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
-                    JOptionPane.showMessageDialog(null,p);
+                    
                     t.stop();
                     wm.minijuego.setVisible(false);
                     perdiste();
@@ -145,13 +146,12 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                 }
                 if(temp==0){
                     temp=100;
-                    JOptionPane.showMessageDialog(null,g);
                     t.stop();
                     
                     switch(c){
                         
                         case 9:
-                            wm.mapa.b9.setEnabled(false);
+                            wm.mapa.b9.setVisible(false);
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b8.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
@@ -162,7 +162,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
                             break;
                         case 2:
-                            wm.mapa.b2.setEnabled(false);
+                            wm.mapa.b2.setVisible(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.mapa.b1.setEnabled(true);
                             wm.lobby.j.setC2(false);
@@ -171,7 +171,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 3:
-                            wm.mapa.b3.setEnabled(false);
+                            wm.mapa.b3.setVisible(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.mapa.b6.setEnabled(true);
                             wm.lobby.j.setC3(false);
@@ -180,7 +180,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 4:
-                            wm.mapa.b4.setEnabled(false);
+                            wm.mapa.b4.setVisible(false);
                             wm.mapa.b8.setEnabled(true);
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b5.setEnabled(true);
@@ -194,7 +194,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             break;
                         case 5:
                             //764
-                            wm.mapa.b5.setEnabled(false);
+                            wm.mapa.b5.setVisible(false);
                             wm.mapa.b7.setEnabled(true);
                             wm.mapa.b6.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
@@ -205,7 +205,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
                             break;
                         case 6:
-                            wm.mapa.b6.setEnabled(false);
+                            wm.mapa.b6.setVisible(false);
                             wm.mapa.b5.setEnabled(true);
                             wm.lobby.j.setC6(false);
                             wm.lobby.j.setC5(true);
@@ -213,7 +213,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             break;
                         case 7:
                             //5 y 4
-                            wm.mapa.b7.setEnabled(false);
+                            wm.mapa.b7.setVisible(false);
                             wm.mapa.b5.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC7(false);
@@ -222,7 +222,7 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 8:
-                            wm.mapa.b8.setEnabled(false);
+                            wm.mapa.b8.setVisible(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC8(false);
                             wm.lobby.j.setC4(true);
