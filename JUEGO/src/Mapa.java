@@ -222,10 +222,11 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_b9ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        this.setVisible(false);
         wm.lobby.setVisible(true);
         wm.lobby.setLocationRelativeTo(null);
         
-        this.setVisible(false);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed

@@ -65,7 +65,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     }
         else{
             wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
-            JOptionPane.showMessageDialog(null, "Haz perdido");
+            JOptionPane.showMessageDialog(null, "Has perdido");
             wm.minijuego.setVisible(false);
             wm.mapa.setVisible(true);
             wm.mapa.setbotones(wm.lobby.j);
@@ -350,7 +350,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(330, 70, 30, 30);
+        jLabel6.setBounds(340, 60, 12, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/plane.gif"))); // NOI18N
         jLabel1.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
@@ -364,7 +364,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(230, 270, 28, 40);
+        jLabel1.setBounds(230, 270, 28, 37);
 
         jLabel3.setText("CRONOMETRO");
         jPanel1.add(jLabel3);
@@ -372,35 +372,35 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(270, 50, 30, 30);
+        jLabel7.setBounds(280, 60, 10, 30);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(130, 10, 30, 30);
+        jLabel8.setBounds(140, 10, 12, 30);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(100, 60, 30, 30);
+        jLabel9.setBounds(100, 60, 10, 30);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(310, 10, 30, 30);
+        jLabel10.setBounds(310, 10, 10, 30);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(220, 20, 30, 30);
+        jLabel11.setBounds(220, 10, 10, 30);
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel12);
-        jLabel12.setBounds(160, 60, 30, 30);
+        jLabel12.setBounds(160, 60, 10, 30);
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(370, 20, 30, 30);
+        jLabel13.setBounds(370, 20, 10, 30);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel14);
-        jLabel14.setBounds(220, 60, 30, 30);
+        jLabel14.setBounds(220, 60, 10, 30);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
         jPanel1.add(ABAJO);
