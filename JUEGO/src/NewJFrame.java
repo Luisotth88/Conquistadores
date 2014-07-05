@@ -57,30 +57,31 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jButton2 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         jPanel1.setLayout(null);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("<<<");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(20, 290, 73, 23);
+        jButton1.setBounds(20, 290, 57, 23);
 
-        jButton2.setText("jButton2");
+        jButton2.setText(">>>");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(400, 290, 73, 23);
+        jButton2.setBounds(400, 290, 57, 23);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/misil.png"))); // NOI18N
         jPanel1.add(jLabel6);
@@ -95,9 +96,13 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
         jPanel1.add(jLabel1);
         jLabel1.setBounds(230, 270, 30, 40);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 490, 340);
+        jLabel3.setText("CRONOMETRO");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(10, 10, 80, 30);
+
+        ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
+        jPanel1.add(ABAJO);
+        ABAJO.setBounds(0, 0, 490, 340);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -176,10 +181,11 @@ public class NewJFrame extends javax.swing.JFrame implements KeyListener{
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ABAJO;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
