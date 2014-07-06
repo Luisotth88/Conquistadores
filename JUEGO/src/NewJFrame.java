@@ -4,17 +4,6 @@ import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-//230X 260Y
-/**
- *
- * @author Diego
- */
 public class NewJFrame extends javax.swing.JFrame {
 
     Timer t;
@@ -38,44 +27,54 @@ public class NewJFrame extends javax.swing.JFrame {
     int x9=0;
     int y9=0;
     int temp;
-    String p = "perdedor";
-    String g= "ganador";
+    int jj=20;
+
     WindowManager wm;
     public NewJFrame(WindowManager wm) {
         this.wm=wm;
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
-        temp=20;
+        temp=jj;
         jLabel2.setVisible(false);
-        
-        
-        
-        
-        
-        
+
     }
     public void perdiste (){
-        temp=20;
+        temp=jj;
         jLabel1.setVisible(false);
         jLabel2.setLocation((int)jLabel1.getLocation().getX(),(int)jLabel1.getLocation().getY());
         jLabel2.setVisible(true);
-        if(wm.lobby.j.getPilotos()==0){
+        wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
+        if(wm.lobby.j.getPilotos()<=0){
                         JOptionPane.showMessageDialog(null, "GAME OVER");
                         String a=wm.lobby.j.getNombre();
                         wm.lobby.j=new jugador(a,1000);
                         wm.login.escribir(wm.lobby.j);
+                        wm.mapa.b9.setVisible(true);
+                        wm.mapa.b1.setVisible(true);
+                        wm.mapa.b2.setVisible(true);
+                        wm.mapa.b3.setVisible(true);
+                        wm.mapa.b4.setVisible(true);
+                        wm.mapa.b5.setVisible(true);
+                        wm.mapa.b6.setVisible(true);
+                        wm.mapa.b7.setVisible(true);
+                        wm.mapa.b8.setVisible(true);
+                        wm.mapa.b2.setEnabled(true);
+                        wm.mapa.b3.setEnabled(true);
+                        wm.mapa.b9.setEnabled(true);
+                        
                         wm.minijuego.setVisible(false);
                         wm.lobby.setVisible(true);
                         
                     }
         else{
-            wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
+            
+            wm.mapa.jLabel3.setText("Pilotos: "+(wm.lobby.j.getPilotos()));
             JOptionPane.showMessageDialog(null, "Has perdido");
             wm.minijuego.setVisible(false);
             jLabel2.setVisible(false);
             jLabel1.setVisible(true);
-            wm.mapa.setbotones(wm.lobby.j);
+            //wm.mapa.setbotones(wm.lobby.j);
              wm.mapa.setVisible(true);
         }
     }
@@ -179,7 +178,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     jLabel14.setLocation(x9,y9);
                 }
                 if(temp==0){
-                    temp=20;
+                    temp=jj;
                     t.stop();
                     
                     switch(c){
@@ -252,14 +251,22 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                     }
                     JOptionPane.showMessageDialog(null, "Territorio Conquistado!");
-                    
+                    wm.login.escribir(wm.lobby.j);
+                    wm.mapa.jLabel1.setText("Puntaje: "+wm.lobby.j.getPuntaje());
+                    //GANASTE
                     if(wm.lobby.j.c1==true&&wm.lobby.j.c2==true&&wm.lobby.j.c3==true&& wm.lobby.j.c4==true&&wm.lobby.j.c5==true&&wm.lobby.j.c6==true&& wm.lobby.j.c7==true&&wm.lobby.j.c8==true&&wm.lobby.j.c9==true){ 
-                        JOptionPane.showMessageDialog(null,"Has completado el juego, Felicidades"); 
+                        JOptionPane.showMessageDialog(null,"Has completado el juego, Felicidades \n Tu puntuacion: "+wm.lobby.j.getPuntaje()); 
                         wm.lobby.j=new jugador(wm.lobby.j.getNombre(),1000); 
-                        wm.login.escribir(wm.lobby.j);
+                        
+                        wm.mapa.b9.setVisible(true);
+                        wm.mapa.b1.setVisible(true);
                         wm.mapa.b2.setVisible(true);
                         wm.mapa.b3.setVisible(true);
-                        wm.mapa.b9.setVisible(true);
+                        wm.mapa.b4.setVisible(true);
+                        wm.mapa.b5.setVisible(true);
+                        wm.mapa.b6.setVisible(true);
+                        wm.mapa.b7.setVisible(true);
+                        wm.mapa.b8.setVisible(true);
                         wm.mapa.b2.setEnabled(true);
                         wm.mapa.b3.setEnabled(true);
                         wm.mapa.b9.setEnabled(true);
