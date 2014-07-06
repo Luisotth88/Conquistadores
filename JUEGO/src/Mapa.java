@@ -47,6 +47,7 @@ public class Mapa extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -161,12 +162,12 @@ public class Mapa extends javax.swing.JFrame {
         jLabel1.setText("Tributos: ");
         jLabel1.setToolTipText("");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 280, 110, 20);
+        jLabel1.setBounds(10, 250, 110, 20);
 
         jLabel3.setText("Pilotos: ");
         jLabel3.setToolTipText("");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 314, 100, 20);
+        jLabel3.setBounds(10, 280, 100, 20);
 
         jLabel4.setText("Jugador");
         jPanel1.add(jLabel4);
@@ -189,6 +190,10 @@ public class Mapa extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel2);
         jLabel2.setBounds(230, 400, 160, 30);
+
+        jLabel5.setText("jLabel5");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(10, 310, 80, 220);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
         jPanel1.add(ABAJO);
@@ -216,9 +221,10 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
-       wm.minijuego.setVisible(true);
-       wm.minijuego.go(9);
-       wm.mapa.setVisible(false);
+         wm.mapa.setVisible(false);
+         wm.minijuego.setVisible(true);
+         wm.minijuego.go(9);
+       
     }//GEN-LAST:event_b9ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -226,20 +232,24 @@ public class Mapa extends javax.swing.JFrame {
         wm.lobby.setVisible(true);
         wm.lobby.setLocationRelativeTo(null);
         
+        //wm.minijuego.jLabel1.setSize([28, 37]);tamaño minimo, se le puede agregar tamaño y asi aumente la dificultad
+        
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
         // TODO add your handling code here:
+        wm.mapa.setVisible(false);
         wm.minijuego.setVisible(true);
-       wm.minijuego.go(8);
-       wm.mapa.setVisible(false);
+        wm.minijuego.go(8);
+       
     }//GEN-LAST:event_b8ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
+        wm.mapa.setVisible(false);
         wm.minijuego.setVisible(true);
        wm.minijuego.go(1);
-       wm.mapa.setVisible(false);
+       
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b4KeyPressed
@@ -248,38 +258,39 @@ public class Mapa extends javax.swing.JFrame {
     }//GEN-LAST:event_b4KeyPressed
 
     private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
-        // TODO add your handling code here:
+        wm.mapa.setVisible(false);
         wm.minijuego.setVisible(true);
        wm.minijuego.go(7);
-       wm.mapa.setVisible(false);
+       
     }//GEN-LAST:event_b7ActionPerformed
 
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
-        // TODO add your handling code here:
+       wm.mapa.setVisible(false);
         wm.minijuego.setVisible(true);
        wm.minijuego.go(5);
-       wm.mapa.setVisible(false);
+       
     }//GEN-LAST:event_b5ActionPerformed
 
     private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
-        // TODO add your handling code here:
+        wm.mapa.setVisible(false);
         wm.minijuego.setVisible(true);
        wm.minijuego.go(6);
-       wm.mapa.setVisible(false);
+       
     }//GEN-LAST:event_b6ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         // TODO add your handling code here:
+       wm.mapa.setVisible(false);
         wm.minijuego.setVisible(true);
        wm.minijuego.go(3);
-       wm.mapa.setVisible(false);
+       
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         // TODO add your handling code here:
+        wm.mapa.setVisible(false);
         wm.minijuego.setVisible(true);
        wm.minijuego.go(2);
-       wm.mapa.setVisible(false);
     }//GEN-LAST:event_b2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -347,6 +358,7 @@ public class Mapa extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

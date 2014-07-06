@@ -1,5 +1,6 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
@@ -120,44 +121,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 
                 temp-=1;
                 jLabel3.setText("Temp: "+temp);
-                if(jLabel6.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                    
-                }
-                if(jLabel7.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                    
-                }
-                if(jLabel8.getBounds().intersects(jLabel1.getBounds())){
+                if(jLabel6.getBounds().intersects(jLabel1.getBounds())||jLabel7.getBounds().intersects(jLabel1.getBounds())||jLabel8.getBounds().intersects(jLabel1.getBounds())||jLabel9.getBounds().intersects(jLabel1.getBounds())||jLabel10.getBounds().intersects(jLabel1.getBounds())||jLabel11.getBounds().intersects(jLabel1.getBounds())||jLabel12.getBounds().intersects(jLabel1.getBounds())||jLabel3.getBounds().intersects(jLabel1.getBounds())||jLabel14.getBounds().intersects(jLabel1.getBounds())){
                     t.stop();
                     perdiste();
                 }
-                if(jLabel9.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                }
-                if(jLabel10.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                }
-                if(jLabel11.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                }
-                if(jLabel12.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                }
-                if(jLabel13.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                }
-                if(jLabel14.getBounds().intersects(jLabel1.getBounds())){
-                    t.stop();
-                    perdiste();
-                }
+                
                 if(jLabel6.getLocation().getY()>=370){
                     x1=posicionxaleatoria();
                     y1=0;
@@ -428,9 +396,10 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        if((int)jLabel1.getLocation().getX()<=350){
+        
+        if((int)jLabel1.getLocation().getX()<= 360){
             jLabel1.setLocation((int)jLabel1.getLocation().getX()+10,(int)jLabel1.getLocation().getY());
         }
         
@@ -454,7 +423,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel ABAJO;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
