@@ -48,6 +48,12 @@ public class Mapa extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -162,12 +168,12 @@ public class Mapa extends javax.swing.JFrame {
         jLabel1.setText("Tributos: ");
         jLabel1.setToolTipText("");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 250, 110, 20);
+        jLabel1.setBounds(10, 240, 110, 20);
 
         jLabel3.setText("Pilotos: ");
         jLabel3.setToolTipText("");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 280, 100, 20);
+        jLabel3.setBounds(10, 260, 100, 20);
 
         jLabel4.setText("Jugador");
         jPanel1.add(jLabel4);
@@ -193,7 +199,31 @@ public class Mapa extends javax.swing.JFrame {
 
         jLabel5.setText("jLabel5");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 310, 80, 220);
+        jLabel5.setBounds(10, 290, 80, 20);
+
+        jLabel6.setText("jLabel5");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(10, 310, 80, 20);
+
+        jLabel7.setText("jLabel5");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(10, 330, 80, 20);
+
+        jLabel8.setText("jLabel5");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(10, 350, 80, 20);
+
+        jLabel9.setText("jLabel5");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(10, 370, 80, 20);
+
+        jLabel10.setText("jLabel5");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(10, 390, 80, 20);
+
+        jLabel11.setText("jLabel5");
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(10, 410, 80, 20);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
         jPanel1.add(ABAJO);
@@ -355,10 +385,16 @@ public class Mapa extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     public javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
