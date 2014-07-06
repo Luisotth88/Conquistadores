@@ -40,10 +40,10 @@ public class Lobby extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -78,21 +78,22 @@ public class Lobby extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(20, 250, 120, 23);
 
-        jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(10, 70, 340, 14);
-
-        jLabel3.setText("jLabel2");
+        jLabel3.setText("Cargar para continuar con el usuario guardado anteriormente y");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(10, 30, 330, 14);
 
-        jLabel4.setText("Boton Iniciar para crear un nuevo usuario y comenzar partida");
+        jLabel4.setText("Presione boton Iniciar para crear un nuevo usuario y comenzar partida,");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(10, 10, 360, 14);
 
-        jLabel5.setText("jLabel2");
+        jLabel5.setText("Salir para volver a Windows");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(10, 50, 330, 14);
+
+        jLabel6.setFont(new java.awt.Font("Palatino Linotype", 0, 18)); // NOI18N
+        jLabel6.setText("Conquistadores");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(170, 260, 140, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lobby.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -163,10 +164,10 @@ public class Lobby extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

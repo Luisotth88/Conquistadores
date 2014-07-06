@@ -26,10 +26,6 @@ public class WindowManager {
         login.setVisible(false);
         mapa.setVisible(false);
         minijuego.setVisible(false);
-        
-        
-      
-        
     }
     
     public static void main(String[] args) {
