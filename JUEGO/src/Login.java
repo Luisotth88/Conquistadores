@@ -112,6 +112,10 @@ public class Login extends javax.swing.JFrame {
         escribir(wm.lobby.j);
         wm.mapa.setbotones(wm.lobby.j);
         //923
+        wm.mapa.b9.setVisible(true);
+        wm.mapa.b2.setVisible(true);
+        wm.mapa.b3.setVisible(true);
+                
         wm.mapa.b1.setVisible(false);
         wm.mapa.b4.setVisible(false);
         wm.mapa.b5.setVisible(false);

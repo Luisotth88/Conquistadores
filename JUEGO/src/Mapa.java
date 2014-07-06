@@ -388,42 +388,71 @@ public class Mapa extends javax.swing.JFrame {
     public void setbotones(jugador a){
         
         if(a.isC1()==true){
+            b1.setVisible(false);
             b4.setEnabled(true);
             b8.setEnabled(true);
+            b4.setVisible(true);
+            b8.setVisible(true);
         }
         if(a.isC2()==true){
+            b2.setVisible(false);
             b4.setEnabled(true);
             b1.setEnabled(true);
+            b4.setVisible(true);
+            b1.setVisible(true);
         }
         if(a.isC3()==true){
+            b3.setVisible(false);
             b4.setEnabled(true);
             b6.setEnabled(true);
+            b4.setVisible(true);
+            b6.setVisible(true);
         }
         if(a.isC4()==true){
+            b4.setVisible(false);
            b1.setEnabled(true);
             b5.setEnabled(true);
             b7.setEnabled(true);
             b8.setEnabled(true);
+            b1.setVisible(true);
+            b5.setVisible(true);
+            b7.setVisible(true);
+            b8.setVisible(true);
         }
         if(a.isC5()==true){
+            b5.setVisible(false);
             b4.setEnabled(true);
             b6.setEnabled(true);
             b7.setEnabled(true);
+            b4.setVisible(true);
+            b6.setVisible(true);
+            b7.setVisible(true);
         }
         if(a.isC6()==true){
+            b6.setVisible(false);
             b5.setEnabled(true);
+            b5.setVisible(true);
         }
         if(a.isC7()==true){
+            b7.setVisible(false);
             b5.setEnabled(true);
             b4.setEnabled(true);
+            b5.setVisible(true);
+            b4.setVisible(true);
         }
         if(a.isC8()==true){
+            b8.setVisible(false);
             b4.setEnabled(true);
+            b4.setVisible(true);
         }
         if(a.isC9()==true){
+            b9.setVisible(false);
             b1.setEnabled(true);
             b4.setEnabled(true);
             b8.setEnabled(true);
+            b1.setVisible(true);
+            b4.setVisible(true);
+            b8.setVisible(true);
         }
         jLabel4.setText("Jugador: "+a.getNombre());
         jLabel1.setText("Tributos: "+a.getPuntaje());

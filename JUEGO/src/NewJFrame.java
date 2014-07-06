@@ -76,6 +76,7 @@ public class NewJFrame extends javax.swing.JFrame {
             jLabel1.setVisible(true);
             //wm.mapa.setbotones(wm.lobby.j);
              wm.mapa.setVisible(true);
+             wm.mapa.setbotones(wm.lobby.j);
         }
     }
     public void go(final int c){
@@ -190,6 +191,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC9(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 2:
                             wm.mapa.b2.setVisible(false);
@@ -197,6 +199,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b1.setEnabled(true);
                             wm.lobby.j.setC2(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 3:
                             wm.mapa.b3.setVisible(false);
@@ -204,6 +207,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b6.setEnabled(true);
                             wm.lobby.j.setC3(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 4:
                             wm.mapa.b4.setVisible(false);
@@ -213,6 +217,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b7.setEnabled(true);
                             wm.lobby.j.setC4(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+400*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 5:
                             //764
@@ -222,12 +227,14 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC5(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 6:
                             wm.mapa.b6.setVisible(false);
                             wm.mapa.b5.setEnabled(true);
                             wm.lobby.j.setC6(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 7:
                             //5 y 4
@@ -236,12 +243,14 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC7(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 8:
                             wm.mapa.b8.setVisible(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.lobby.j.setC8(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
                             break;
                         case 1:
                             wm.mapa.b1.setVisible(false);
@@ -249,6 +258,8 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b8.setEnabled(true);
                             wm.lobby.j.setC1(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
+                            wm.mapa.setbotones(wm.lobby.j);
+                            break;
                     }
                     JOptionPane.showMessageDialog(null, "Territorio Conquistado!");
                     wm.mapa.setbotones(wm.lobby.j);
@@ -278,8 +289,8 @@ public class NewJFrame extends javax.swing.JFrame {
                         wm.minijuego.setVisible(false);
                         wm.mapa.setVisible(true);
                     }
-                    wm.mapa.setbotones(wm.lobby.j);
-                    wm.mapa.setbotones(wm.lobby.j);
+                    
+                    
                 }
             }
         });
