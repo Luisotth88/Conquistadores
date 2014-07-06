@@ -251,6 +251,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                     }
                     JOptionPane.showMessageDialog(null, "Territorio Conquistado!");
+                    wm.mapa.setbotones(wm.lobby.j);
                     
                     wm.mapa.jLabel1.setText("Puntaje: "+wm.lobby.j.getPuntaje());
                     //GANASTE
@@ -277,12 +278,13 @@ public class NewJFrame extends javax.swing.JFrame {
                         wm.minijuego.setVisible(false);
                         wm.mapa.setVisible(true);
                     }
-                    
+                    wm.mapa.setbotones(wm.lobby.j);
+                    wm.mapa.setbotones(wm.lobby.j);
                 }
             }
         });
         t.start();
-        wm.mapa.setbotones(wm.lobby.j);
+        
     }
 
     /**

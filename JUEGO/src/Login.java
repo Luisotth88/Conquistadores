@@ -111,6 +111,13 @@ public class Login extends javax.swing.JFrame {
         wm.lobby.j=new jugador(jTextField1.getText(),1000);
         escribir(wm.lobby.j);
         wm.mapa.setbotones(wm.lobby.j);
+        //923
+        wm.mapa.b1.setVisible(false);
+        wm.mapa.b4.setVisible(false);
+        wm.mapa.b5.setVisible(false);
+        wm.mapa.b6.setVisible(false);
+        wm.mapa.b7.setVisible(false);
+        wm.mapa.b8.setVisible(false);
         wm.mapa.setVisible(true);
         wm.mapa.setLocationRelativeTo(null);
         
