@@ -47,6 +47,7 @@ public class NewJFrame extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         setSize(490, 370);
         temp=100;
+        jLabel2.setVisible(false);
         
         
         
@@ -56,6 +57,9 @@ public class NewJFrame extends javax.swing.JFrame {
     }
     public void perdiste (){
         temp=100;
+        jLabel1.setVisible(false);
+        jLabel2.setLocation((int)jLabel1.getLocation().getX(),(int)jLabel1.getLocation().getY());
+        jLabel2.setVisible(true);
         if(wm.lobby.j.getPilotos()==0){
                         JOptionPane.showMessageDialog(null, "GAME OVER");
                         String a=wm.lobby.j.getNombre();
@@ -291,6 +295,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -370,6 +375,11 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel14);
         jLabel14.setBounds(220, 60, 10, 30);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/explo.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(230, 270, 30, 40);
+
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
         jPanel1.add(ABAJO);
         ABAJO.setBounds(0, 0, 490, 340);
@@ -429,6 +439,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
