@@ -74,7 +74,8 @@ public class NewJFrame extends javax.swing.JFrame {
             wm.minijuego.setVisible(false);
             wm.mapa.setVisible(true);
             wm.mapa.setbotones(wm.lobby.j);
-            
+            jLabel2.setVisible(false);
+            jLabel1.setVisible(true);
         }
     }
     public void go(final int c){
