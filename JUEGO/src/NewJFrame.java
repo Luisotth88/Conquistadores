@@ -79,6 +79,7 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }
     public void go(final int c){
+        jLabel2.setVisible(false);
         y1=0;
         y2=0;
         y3=0;
