@@ -65,6 +65,7 @@ public class NewJFrame extends javax.swing.JFrame {
                         String a=wm.lobby.j.getNombre();
                         wm.lobby.j=new jugador(a,1000);
                         wm.login.escribir(wm.lobby.j);
+                        wm.minijuego.setVisible(false);
                         wm.lobby.setVisible(true);
                         
                     }

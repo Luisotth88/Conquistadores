@@ -54,6 +54,10 @@ public class Mapa extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -197,33 +201,49 @@ public class Mapa extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(230, 400, 160, 30);
 
-        jLabel5.setText("jLabel5");
+        jLabel5.setText("Conquista todo el ");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 290, 100, 20);
+        jLabel5.setBounds(10, 290, 120, 20);
 
-        jLabel6.setText("jLabel5");
+        jLabel6.setText("continente sudameri-");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(10, 310, 100, 20);
+        jLabel6.setBounds(10, 310, 130, 20);
 
-        jLabel7.setText("jLabel5");
+        jLabel7.setText("cano.");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(10, 330, 100, 20);
+        jLabel7.setBounds(10, 330, 130, 20);
 
-        jLabel8.setText("jLabel5");
+        jLabel8.setText("Los pilotos son los");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(10, 350, 100, 20);
+        jLabel8.setBounds(10, 350, 140, 20);
 
-        jLabel9.setText("jLabel5");
+        jLabel9.setText("intentos restantes.");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(10, 370, 100, 20);
+        jLabel9.setBounds(10, 370, 160, 20);
 
-        jLabel10.setText("jLabel5");
+        jLabel10.setText("Guardar la partida");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(10, 390, 100, 20);
+        jLabel10.setBounds(10, 390, 140, 20);
 
-        jLabel11.setText("jLabel5");
+        jLabel11.setText("te permite guardar ");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(10, 410, 100, 20);
+        jLabel11.setBounds(10, 410, 170, 20);
+
+        jLabel12.setText("los territorios ya ");
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(10, 430, 170, 20);
+
+        jLabel13.setText("conquistados y");
+        jPanel1.add(jLabel13);
+        jLabel13.setBounds(10, 450, 170, 20);
+
+        jLabel14.setText("continuar en otro");
+        jPanel1.add(jLabel14);
+        jLabel14.setBounds(10, 470, 170, 20);
+
+        jLabel15.setText("momento");
+        jPanel1.add(jLabel15);
+        jLabel15.setBounds(10, 490, 170, 20);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
         jPanel1.add(ABAJO);
@@ -387,6 +407,10 @@ public class Mapa extends javax.swing.JFrame {
     public javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
