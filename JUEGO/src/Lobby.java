@@ -90,10 +90,10 @@ public class Lobby extends javax.swing.JFrame {
         jPanel1.add(jLabel5);
         jLabel5.setBounds(10, 50, 330, 14);
 
-        jLabel6.setFont(new java.awt.Font("Palatino Linotype", 0, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Trajan Pro", 0, 18)); // NOI18N
         jLabel6.setText("Conquistadores");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(170, 260, 140, 40);
+        jLabel6.setBounds(140, 230, 220, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lobby.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
