@@ -42,11 +42,11 @@ public class Mapa extends javax.swing.JFrame {
         b9 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -169,20 +169,6 @@ public class Mapa extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(230, 500, 160, 23);
 
-        jLabel1.setText("Tributos: ");
-        jLabel1.setToolTipText("");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 240, 110, 20);
-
-        jLabel3.setText("Pilotos: ");
-        jLabel3.setToolTipText("");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 260, 100, 20);
-
-        jLabel4.setText("Jugador");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(234, 10, 150, 30);
-
         jButton3.setText("Guardar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,6 +177,11 @@ public class Mapa extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3);
         jButton3.setBounds(230, 470, 160, 23);
+
+        jLabel1.setText("Tributos: ");
+        jLabel1.setToolTipText("");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(10, 240, 110, 20);
 
         jLabel2.setText("Precio Piloto:");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -201,46 +192,66 @@ public class Mapa extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(230, 400, 160, 30);
 
+        jLabel3.setText("Pilotos: ");
+        jLabel3.setToolTipText("");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(10, 260, 100, 20);
+
+        jLabel4.setText("Jugador");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(234, 10, 150, 30);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel5.setText("Conquista todo el ");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(10, 290, 120, 20);
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel6.setText("continente sudameri-");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(10, 310, 130, 20);
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel7.setText("cano.");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(10, 330, 130, 20);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel8.setText("Los pilotos son los");
         jPanel1.add(jLabel8);
         jLabel8.setBounds(10, 350, 140, 20);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel9.setText("intentos restantes.");
         jPanel1.add(jLabel9);
         jLabel9.setBounds(10, 370, 160, 20);
 
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel10.setText("Guardar la partida");
         jPanel1.add(jLabel10);
         jLabel10.setBounds(10, 390, 140, 20);
 
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel11.setText("te permite guardar ");
         jPanel1.add(jLabel11);
         jLabel11.setBounds(10, 410, 170, 20);
 
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel12.setText("los territorios ya ");
         jPanel1.add(jLabel12);
         jLabel12.setBounds(10, 430, 170, 20);
 
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel13.setText("conquistados y");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(10, 450, 170, 20);
 
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel14.setText("continuar en otro");
         jPanel1.add(jLabel14);
         jLabel14.setBounds(10, 470, 170, 20);
 
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel15.setText("momento");
         jPanel1.add(jLabel15);
         jLabel15.setBounds(10, 490, 170, 20);

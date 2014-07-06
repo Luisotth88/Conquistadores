@@ -80,11 +80,11 @@ public class Lobby extends javax.swing.JFrame {
 
         jLabel3.setText("Cargar para continuar con el usuario guardado anteriormente");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 30, 330, 14);
+        jLabel3.setBounds(10, 30, 430, 14);
 
         jLabel4.setText("Presione boton Iniciar para crear un nuevo usuario y comenzar partida");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(10, 10, 360, 14);
+        jLabel4.setBounds(10, 10, 430, 14);
 
         jLabel5.setText("Salir para volver a Windows");
         jPanel1.add(jLabel5);

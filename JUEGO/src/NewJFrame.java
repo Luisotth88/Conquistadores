@@ -46,7 +46,7 @@ public class NewJFrame extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
-        temp=100;
+        temp=10;
         jLabel2.setVisible(false);
         
         
@@ -56,7 +56,7 @@ public class NewJFrame extends javax.swing.JFrame {
         
     }
     public void perdiste (){
-        temp=100;
+        temp=10;
         jLabel1.setVisible(false);
         jLabel2.setLocation((int)jLabel1.getLocation().getX(),(int)jLabel1.getLocation().getY());
         jLabel2.setVisible(true);
@@ -179,7 +179,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     jLabel14.setLocation(x9,y9);
                 }
                 if(temp==0){
-                    temp=100;
+                    temp=10;
                     t.stop();
                     
                     switch(c){
@@ -189,28 +189,21 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b8.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
-                            wm.lobby.j.setC9(false);
-                            wm.lobby.j.setC1(true);
-                            wm.lobby.j.setC8(true);
-                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setC9(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
                             break;
                         case 2:
                             wm.mapa.b2.setVisible(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.mapa.b1.setEnabled(true);
-                            wm.lobby.j.setC2(false);
-                            wm.lobby.j.setC4(true);
-                            wm.lobby.j.setC1(true);
+                            wm.lobby.j.setC2(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 3:
                             wm.mapa.b3.setVisible(false);
                             wm.mapa.b4.setEnabled(true);
                             wm.mapa.b6.setEnabled(true);
-                            wm.lobby.j.setC3(false);
-                            wm.lobby.j.setC4(true);
-                            wm.lobby.j.setC6(true);
+                            wm.lobby.j.setC3(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 4:
@@ -219,11 +212,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b1.setEnabled(true);
                             wm.mapa.b5.setEnabled(true);
                             wm.mapa.b7.setEnabled(true);
-                            wm.lobby.j.setC4(false);
-                            wm.lobby.j.setC8(true);
-                            wm.lobby.j.setC1(true);
-                            wm.lobby.j.setC5(true);
-                            wm.lobby.j.setC7(true);
+                            wm.lobby.j.setC4(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+400*wm.lobby.j.getPilotos());
                             break;
                         case 5:
@@ -232,17 +221,13 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b7.setEnabled(true);
                             wm.mapa.b6.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
-                            wm.lobby.j.setC5(false);
-                            wm.lobby.j.setC7(true);
-                            wm.lobby.j.setC6(true);
-                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setC5(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+300*wm.lobby.j.getPilotos());
                             break;
                         case 6:
                             wm.mapa.b6.setVisible(false);
                             wm.mapa.b5.setEnabled(true);
-                            wm.lobby.j.setC6(false);
-                            wm.lobby.j.setC5(true);
+                            wm.lobby.j.setC6(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100*wm.lobby.j.getPilotos());
                             break;
                         case 7:
@@ -250,23 +235,20 @@ public class NewJFrame extends javax.swing.JFrame {
                             wm.mapa.b7.setVisible(false);
                             wm.mapa.b5.setEnabled(true);
                             wm.mapa.b4.setEnabled(true);
-                            wm.lobby.j.setC7(false);
-                            wm.lobby.j.setC5(true);
-                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setC7(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+200*wm.lobby.j.getPilotos());
                             break;
                         case 8:
                             wm.mapa.b8.setVisible(false);
                             wm.mapa.b4.setEnabled(true);
-                            wm.lobby.j.setC8(false);
-                            wm.lobby.j.setC4(true);
+                            wm.lobby.j.setC8(true);
                             wm.lobby.j.setPuntaje(wm.lobby.j.getPuntaje()+100*wm.lobby.j.getPilotos());
                             break;
                             
                             
                     }
                     JOptionPane.showMessageDialog(null, "Territorio Conquistado!");
-                    wm.mapa.setbotones(wm.lobby.j);
+                    
                     if(wm.lobby.j.c1==true&&wm.lobby.j.c2==true&&wm.lobby.j.c3==true&& wm.lobby.j.c4==true&&wm.lobby.j.c5==true&&wm.lobby.j.c6==true&& wm.lobby.j.c7==true&&wm.lobby.j.c8==true&&wm.lobby.j.c9==true){ 
                         JOptionPane.showMessageDialog(null,"Has completado el juego, Felicidades"); 
                         wm.lobby.j=new jugador(wm.lobby.j.getNombre(),1000); 
