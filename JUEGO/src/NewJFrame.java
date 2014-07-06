@@ -266,8 +266,15 @@ public class NewJFrame extends javax.swing.JFrame {
                     }
                     JOptionPane.showMessageDialog(null, "Territorio Conquistado!");
                     wm.mapa.setbotones(wm.lobby.j);
-                    wm.minijuego.setVisible(false);
-                    wm.mapa.setVisible(true);
+                    if(wm.lobby.j.c1==true&&wm.lobby.j.c2==true&&wm.lobby.j.c3==true&& wm.lobby.j.c4==true&&wm.lobby.j.c5==true&&wm.lobby.j.c6==true&& wm.lobby.j.c7==true&&wm.lobby.j.c8==true&&wm.lobby.j.c9==true){ 
+                        JOptionPane.showMessageDialog(null,"Has completado el juego, Felicidades"); 
+                        wm.lobby.j=new jugador(wm.lobby.j.getNombre(),1000); 
+                        wm.minijuego.setVisible(false);
+                        wm.lobby.setVisible(true);
+                    }else{
+                        wm.minijuego.setVisible(false);
+                        wm.mapa.setVisible(true);
+                    }
                 }
             }
         });

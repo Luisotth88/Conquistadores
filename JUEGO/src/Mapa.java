@@ -199,31 +199,31 @@ public class Mapa extends javax.swing.JFrame {
 
         jLabel5.setText("jLabel5");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 290, 80, 20);
+        jLabel5.setBounds(10, 290, 100, 20);
 
         jLabel6.setText("jLabel5");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(10, 310, 80, 20);
+        jLabel6.setBounds(10, 310, 100, 20);
 
         jLabel7.setText("jLabel5");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(10, 330, 80, 20);
+        jLabel7.setBounds(10, 330, 100, 20);
 
         jLabel8.setText("jLabel5");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(10, 350, 80, 20);
+        jLabel8.setBounds(10, 350, 100, 20);
 
         jLabel9.setText("jLabel5");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(10, 370, 80, 20);
+        jLabel9.setBounds(10, 370, 100, 20);
 
         jLabel10.setText("jLabel5");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(10, 390, 80, 20);
+        jLabel10.setBounds(10, 390, 100, 20);
 
         jLabel11.setText("jLabel5");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(10, 410, 80, 20);
+        jLabel11.setBounds(10, 410, 100, 20);
 
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mapa.png"))); // NOI18N
         jPanel1.add(ABAJO);
