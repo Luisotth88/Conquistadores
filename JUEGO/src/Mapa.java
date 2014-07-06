@@ -386,15 +386,45 @@ public class Mapa extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jLabel2MouseClicked
     public void setbotones(jugador a){
-        b1.setEnabled(a.isC1());
-        b2.setEnabled(a.isC2());
-        b3.setEnabled(a.isC3());
-        b4.setEnabled(a.isC4());
-        b5.setEnabled(a.isC5());
-        b6.setEnabled(a.isC6());
-        b7.setEnabled(a.isC7());
-        b8.setEnabled(a.isC8());
-        b9.setEnabled(a.isC9());
+        
+        if(a.isC1()==true){
+            b4.setEnabled(true);
+            b8.setEnabled(true);
+        }
+        if(a.isC2()==true){
+            b4.setEnabled(true);
+            b1.setEnabled(true);
+        }
+        if(a.isC3()==true){
+            b4.setEnabled(true);
+            b6.setEnabled(true);
+        }
+        if(a.isC4()==true){
+           b1.setEnabled(true);
+            b5.setEnabled(true);
+            b7.setEnabled(true);
+            b8.setEnabled(true);
+        }
+        if(a.isC5()==true){
+            b4.setEnabled(true);
+            b6.setEnabled(true);
+            b7.setEnabled(true);
+        }
+        if(a.isC6()==true){
+            b5.setEnabled(true);
+        }
+        if(a.isC7()==true){
+            b5.setEnabled(true);
+            b4.setEnabled(true);
+        }
+        if(a.isC8()==true){
+            b4.setEnabled(true);
+        }
+        if(a.isC9()==true){
+            b1.setEnabled(true);
+            b4.setEnabled(true);
+            b8.setEnabled(true);
+        }
         jLabel4.setText("Jugador: "+a.getNombre());
         jLabel1.setText("Tributos: "+a.getPuntaje());
         jLabel3.setText("Pilotos: "+a.getPilotos() );
